@@ -156,7 +156,7 @@ NIS2 Directive is the *why* (legal obligation). TOGAF Directive is the *what* (a
 
 ## Inter-Model Articulation
 
-See `frameworks/README.md` for full articulation analysis including:
+See `../README.md` for full articulation analysis including:
 
 - NIS2 × ISO 25010 (Security overlap — F6)
 - NIS2 × ISO 25011 (Service quality dimensions)

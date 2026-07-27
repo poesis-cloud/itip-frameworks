@@ -6,7 +6,7 @@ This document defines the **inter-model articulation** for all sourced models in
 
 Models are composed **through GSM**, not **within schemas**:
 
-- Each model produces pure schemas in its own folder (`def/frameworks/{model}/`)
+- Each model produces pure schemas in its own folder (`def/{model}/`)
 - Cross-model references happen at the **governance layer**: Directives qualify Subjects using archetypes from different models
 - The GSM Ascription mechanism binds multiple Definition layers onto the same Subject
 
@@ -47,6 +47,33 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 | **CloudEvents** | CloudEvents 1.0.2 (CNCF, 2022) | Data format — cloud-native event envelope | 1 |
 | **DDD** | Domain-Driven Design (Evans, 2003; Vernon, 2013) | Data format — domain/integration event classification | 1 |
 | **ITIP** | CRUD (James Martin, 1983); SCAP CPE 2.3 (NIST) | ITIP domain vocabulary — CRUD effector semantics, technology identification, governance sourcing | 7 |
+
+## Model-Native Organization (P9)
+
+Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref`.
+
+| TOGAF Taxonomy | NIS2 Taxonomy | ISO 25010 Taxonomy |
+|---------------|--------------|-------------------|
+| `business-architecture/` | `entity-classification/` | `product-quality/` |
+| `application-architecture/` | `risk-management/` | `quality-in-use/` |
+| `data-architecture/` | `incident-reporting/` | |
+| `technology-architecture/` | `supply-chain/` | |
+| `governance/` | | |
+| `adm/` | | |
+
+### Quality vs Architecture vs Regulatory models
+
+- **Quality models** (ISO 2501x): Define **measurement vocabularies** — transversal viability dimensions applicable to any governed entity. Produce vocabulary schemas only.
+- **Architecture models** (TOGAF): Define **structural/behavioral/governance vocabularies** — entity types, functions, couplings, governance mechanisms. Produce vocabulary schemas only.
+- **Regulatory models** (NIS2, GDPR, future DORA): Operate at **two layers simultaneously** — vocabulary schemas (regulation-specific concepts) AND sourced governance instances (concrete Directives/Norms from legal articles). Use ITIP's `SourcedDirective`/`SourcedNorm` archetypes.
+
+## Planned Frameworks
+
+| Framework | Contribution |
+|-----------|-------------|
+| **SAFe** | Agile governance dimensions (delivery cadence, flow metrics, PI objectives) |
+| **ITIL** | Service management dimensions (SLA, incident, change, problem governance) |
+| **DORA** | Digital operational resilience (ICT risk, incident classification, third-party) |
 
 ## Articulation Map
 

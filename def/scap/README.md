@@ -80,7 +80,7 @@ This enables governance paths like: NIS2 Directive → Norm referencing ProductS
 
 ## Inter-Model Articulation
 
-See `def/frameworks/README.md` for cross-model composition details:
+See `../README.md` for cross-model composition details:
 
 - **SCAP × TOGAF**: CPE identifies TOGAF TechnologyComponent and PlatformService subjects. Enables technology-specific governance on architectural structures.
 - **SCAP × NIS2**: SCAP provides the identification substrate for NIS2 Art 21 risk management compliance. CCE-identified settings are what NIS2 Norms ultimately check.

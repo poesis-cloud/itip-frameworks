@@ -283,7 +283,7 @@ GDPR **creates the obligation** (legal mandate); ISO 25010/25012 **provide the m
 
 ## Inter-Model Articulation
 
-See `frameworks/README.md` for full articulation analysis including:
+See `../README.md` for full articulation analysis including:
 
 - GDPR × NIS2 (dual EU regulatory framework — breach notification overlap)
 - GDPR × ISO 25010 (security/privacy overlap)

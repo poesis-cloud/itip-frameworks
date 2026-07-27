@@ -67,7 +67,7 @@ ISO 25011 explicitly reuses ISO 25010's Quality in Use model (Effectiveness, Eff
 | **25040 — Evaluation** | 25040 | Evaluation process framework and Quality Rating Modules — already operationalized by GSM's Norm grammar (`toleranceMode + temporalWindow + aggregation`); partially sourceable (evaluation type classification) but low priority |
 | **25050–25099 — Extensions** | 25051, 25060–25069 | RUSP requirements, Common Industry Format for usability — narrow scope, not yet relevant to ITIP governance |
 
-See the [SQuaRE Series — GSM Compatibility Trace](../README.md#square-series--gsm-compatibility-trace) section in frameworks/README.md for a detailed pipeline mapping of all SQuaRE divisions to GSM primitives.
+See the [SQuaRE Series — GSM Compatibility Trace](../README.md#square-series--gsm-compatibility-trace) section in `../README.md` for a detailed pipeline mapping of all SQuaRE divisions to GSM primitives.
 
 ## File Inventory
 
