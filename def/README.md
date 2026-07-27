@@ -29,7 +29,7 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 ## Sourced Models
 
 | Model | Source Standard | Scope | Schema Count |
-|-------|----------------|-------|-------------|
+| ------- | ---------------- | ------- | ------------- |
 | **TOGAF** | TOGAF Standard, 10th Edition (The Open Group) | Enterprise Architecture — structures, behaviors, governance, ADM | 61 |
 | **ISO 25000 (SQuaRE)** | ISO/IEC 25010:2011 + 25011:2017 + 25012:2008 | Quality Models — product quality (16), service quality (8), data quality (15) | 39 |
 | **NIS2** | Directive (EU) 2022/2555 | EU Cybersecurity — entity classification, risk management, incident reporting, supply chain | 6 schemas + 4 directives + 21 norms |
@@ -53,7 +53,7 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref`.
 
 | TOGAF Taxonomy | NIS2 Taxonomy | ISO 25010 Taxonomy |
-|---------------|--------------|-------------------|
+| --------------- | -------------- | ------------------- |
 | `business-architecture/` | `entity-classification/` | `product-quality/` |
 | `application-architecture/` | `risk-management/` | `quality-in-use/` |
 | `data-architecture/` | `incident-reporting/` | |
@@ -70,7 +70,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 ## Planned Frameworks
 
 | Framework | Contribution |
-|-----------|-------------|
+| ----------- | ------------- |
 | **SAFe** | Agile governance dimensions (delivery cadence, flow metrics, PI objectives) |
 | **ITIL** | Service management dimensions (SLA, incident, change, problem governance) |
 | **DORA** | Digital operational resilience (ICT risk, incident classification, third-party) |
@@ -82,7 +82,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: TOGAF governance mechanisms (Directives, Norms) **reference** ISO 25010 quality characteristics as qualifiers.
 
 | TOGAF Concept | Articulation | ISO 25010 Concept |
-|---------------|-------------|-------------------|
+| --------------- | ------------- | ------------------- |
 | ArchitecturePrinciple (Directive) | qualifies with → | Any product-quality characteristic (ProductReliability, ProductSecurity, etc.) |
 | ArchitectureRequirement (Directive) | qualifies with → | Specific quality characteristic + measurable threshold |
 | ArchitectureConstraint (Directive) | constrains using → | Quality bounds (e.g., min Availability, max latency) |
@@ -96,7 +96,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: TOGAF data architecture concepts are **governed by** ISO 25012 data quality characteristics.
 
 | TOGAF Concept | Articulation | ISO 25012 Concept |
-|---------------|-------------|-------------------|
+| --------------- | ------------- | ------------------- |
 | DataEntity (rootless) | governed by → | Any data quality characteristic |
 | LogicalDataComponent (Structure) | governed by → | Inherent characteristics (Accuracy, Completeness, Consistency) |
 | PhysicalDataComponent (Structure) | governed by → | System-dependent characteristics (DataAvailability, DataRecoverability) |
@@ -110,7 +110,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: ISO 25010 governs **product/system quality**; ISO 25012 governs **data quality**. They are complementary, not overlapping.
 
 | ISO 25010 | Overlap Area | ISO 25012 |
-|-----------|-------------|-----------|
+| ----------- | ------------- | ----------- |
 | ProductAvailability (product uptime) | Related but distinct | DataAvailability (data accessible) |
 | ProductSecurity (product security) | Related but distinct | DataConfidentiality (data protection) |
 | ProductPortability (product portability) | Related but distinct | DataPortability (data portability) |
@@ -123,7 +123,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: ISO 25010 governs **product/software quality** (intrinsic attributes of the artifact); ISO 25011 governs **IT service quality** (delivery experience around the artifact). Complementary, operating at different levels.
 
 | ISO 25010 (Product) | Shared Name | ISO 25011 (Service) |
-|---------------------|-------------|---------------------|
+| --------------------- | ------------- | --------------------- |
 | ProductReliability (fault tolerance, maturity) | Reliability | ServiceReliability (continuity, SLA availability) |
 | ProductSecurity (encryption, authentication) | Security | ServiceSecurity (service-level confidentiality, traceability) |
 | ProductUsability (learnability, accessibility) | Usability | ServiceUsability (+ courtesy, service-level operability) |
@@ -140,7 +140,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: TOGAF governance mechanisms **reference** ISO 25011 characteristics as qualifiers for service-level governance.
 
 | TOGAF Concept | Articulation | ISO 25011 Concept |
-|---------------|-------------|-------------------|
+| --------------- | ------------- | ------------------- |
 | PlatformService (Structure) | governed by → | Any service-quality characteristic |
 | ArchitecturePrinciple (Directive) | qualifies with → | Service quality dimension (e.g., ServiceReliability target) |
 | ArchitectureRequirement (Directive) | qualifies with → | Specific service quality + measurable threshold |
@@ -157,7 +157,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: NIS2 mandates **what** must be secured (regulatory obligation with legal force); ISO 25010 defines **how** security is measured (quality vocabulary). NIS2 Directives qualify ISO 25010 archetypes — they compose, not conflict.
 
 | NIS2 Concept | Articulation | ISO 25010 Concept |
-|-------------|-------------|-------------------|
+| ------------- | ------------- | ------------------- |
 | Art21 Risk Management (Directive) | mandates using → | ProductSecurity (encryption, auth, TLS) |
 | Art21-2h Cryptography (Norm) | verifies through → | ProductSecurity.encryptionAtRestEnabled, .minimumTlsVersion |
 | Art21-2j MFA (Norm) | verifies through → | ProductSecurity.authenticationMethod (OAUTH2, OIDC, MTLS) |
@@ -171,7 +171,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: NIS2 mandates service continuity and incident reporting; ISO 25011 defines service delivery quality dimensions. NIS2 temporal norms (24h/72h/1mo) have no ISO 25011 equivalent — they are legal deadlines, not SLA targets.
 
 | NIS2 Concept | Articulation | ISO 25011 Concept |
-|-------------|-------------|-------------------|
+| ------------- | ------------- | ------------------- |
 | Art21-2c Business Continuity (Norm) | mandates capability of → | ServiceReliability (continuityLevel, recoverabilityTarget) |
 | Art23 Incident Reporting (Directive) | complements | ServiceReliability (availabilityTarget) |
 | Nis2IncidentReporting.deadlineHours | no equivalent (legal deadline) | ServiceResponsiveness (different semantic — user-facing) |
@@ -183,7 +183,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: NIS2 mandates data protection (confidentiality, integrity) as part of cybersecurity; ISO 25012 measures data quality dimensions independently.
 
 | NIS2 Concept | Articulation | ISO 25012 Concept |
-|-------------|-------------|-------------------|
+| ------------- | ------------- | ------------------- |
 | Art21 Risk Management (security-related) | mandates protection of → | DataConfidentiality (classification, encryption, masking) |
 | Art21-2c Business Continuity (Norm) | mandates recoverability of → | DataRecoverability (RPO, RTO, backup strategy) |
 | Nis2GovernanceAccountability | governance layer for → | DataCompliance (applicableStandards includes 'NIS2') |
@@ -196,7 +196,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: NIS2 provides **regulatory governance** (legal mandates with penalties); TOGAF provides **architecture governance** (enterprise design principles and standards). Both produce Directives and Norms — they compose hierarchically.
 
 | NIS2 Concept | Articulation | TOGAF Concept |
-|-------------|-------------|---------------|
+| ------------- | ------------- | --------------- |
 | Art21 Risk Management (Directive) | regulatory driver for → | ArchitecturePrinciple (security principles derived from NIS2) |
 | Art21-2d Supply Chain (Directive) | constrains → | Standard (technology standards for supplier integration) |
 | Nis2EntityClassification | scoping input to → | Capability (organization-level capability mapping) |
@@ -209,7 +209,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: GDPR and NIS2 are complementary EU regulations. NIS2 mandates **cybersecurity** measures; GDPR mandates **data protection** measures. Both produce Directives and Norms with legal force. Their scoping mechanisms differ (NIS2: entity tier classification; GDPR: controller/processor role), but many entities fall under both.
 
 | GDPR Concept | Articulation | NIS2 Concept |
-|-------------|-------------|-------------|
+| ------------- | ------------- | ------------- |
 | Art33 Breach Notification (72h to DPA) | parallel obligation with → | Art23 Incident Reporting (24h/72h/1mo to CSIRT) |
 | Art5-1f Integrity & Confidentiality (principle) | complementary to → | Art21 Risk Management (10 security measures) |
 | Art25 Data Protection by Design (Directive) | drives → | Art21-2h Cryptography (encryption mandate) |
@@ -223,7 +223,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: GDPR mandates data protection (Art 5(1)(f) integrity/confidentiality, Art 25 data protection by design); ISO 25010 defines product security characteristics. GDPR **creates the obligation**; ISO 25010 **provides the measurement vocabulary**.
 
 | GDPR Concept | Articulation | ISO 25010 Concept |
-|-------------|-------------|-------------------|
+| ------------- | ------------- | ------------------- |
 | Art5-1f Integrity & Confidentiality (Norm) | mandates using → | ProductSecurity (encryption, auth, TLS) |
 | Art25 Data Protection by Design (Directive) | design-time driver for → | ProductSecurity + ProductMaintainability (modularity for privacy) |
 | Art32 Security of Processing (not sourced) | evaluated through → | ProductSecurity (technical security measures) |
@@ -236,7 +236,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: GDPR mandates data accuracy (Art 5(1)(d)), data minimisation (Art 5(1)(c)), and storage limitation (Art 5(1)(e)); ISO 25012 provides data quality measurement vocabulary. GDPR **creates the obligation**; ISO 25012 **provides the measurement properties**.
 
 | GDPR Concept | Articulation | ISO 25012 Concept |
-|-------------|-------------|-------------------|
+| ------------- | ------------- | ------------------- |
 | Art5-1d Accuracy (Norm) | mandates → | DataAccuracy (syntacticAccuracy, semanticAccuracy) |
 | Art5-1c Data Minimisation (Norm) | constrains → | DataRelevancy + DataCompleteness (minimum necessary data) |
 | Art5-1e Storage Limitation (Norm) | constrains → | DataCurrentness (temporal relevance, retention limits) |
@@ -251,7 +251,7 @@ Frameworks are organized by the **model's own taxonomy**, not by GSM subject typ
 **Relationship**: GDPR provides **regulatory governance** for data protection; TOGAF provides **architecture governance** for enterprise design. GDPR mandates translate into architecture principles, requirements, and standards.
 
 | GDPR Concept | Articulation | TOGAF Concept |
-|-------------|-------------|---------------|
+| ------------- | ------------- | --------------- |
 | Art25 Data Protection by Design (Directive) | regulatory driver for → | ArchitecturePrinciple (privacy-by-design principles) |
 | Art30 Records of Processing (Directive) | mandates → | InformationSystemService (data processing inventory) |
 | GdprControllerProcessorRole | scoping input to → | Capability (data processing capability mapping) |
@@ -267,7 +267,7 @@ The sourced models (ISO 25010, 25011, 25012) belong to the **SQuaRE** (Systems a
 ### SQuaRE division landscape
 
 | Division | Standards | Purpose | Sourced? |
-|----------|-----------|---------|----------|
+| ---------- | ----------- | --------- | ---------- |
 | **2500n — Management** | 25000, 25001, 25002 | Common terms, planning guidance, quality model overview | No — process guidance, not a model |
 | **2501n — Quality Models** | 25010, 25011, 25012, 25019 | Define quality characteristics and sub-characteristics | **Yes** — 25010 (16), 25011 (8), 25012 (15) = 39 archetype schemas |
 | **2502n — Measurement** | 25020, 25022, 25023, 25024, 25025 | Define concrete measures (formulas, scales) for each quality characteristic | Not yet — candidate (see below) |
@@ -312,7 +312,7 @@ Result: pass / fail / score          Norm compliance status
 ISO 25030 defines *how to elicit, define, use, and govern quality requirements*. GSM's Directive grammar formalizes the same concepts into a machine-evaluable tuple.
 
 | ISO 25030 Concept | GSM Directive Field | Correspondence |
-|-------------------|-------------------|----------------|
+| ------------------- | ------------------- | ---------------- |
 | Stakeholder need / governed entity | `purpose` (Structure ref) | The Structure whose value/viability is governed |
 | Quality characteristic (from 2501n models) | `qualifier` (Archetype ref) | Points to a quality archetype: `ProductReliability`, `ServiceResponsiveness`, `DataAccuracy`, etc. |
 | Normative strength (mandatory / recommended / optional) | `modal` enum | `MUST` = mandatory, `SHOULD` = recommended, `MAY` = optional — formalizes the deontic strength 25030 describes in prose |
@@ -340,7 +340,7 @@ The `qualifier` points to `ServiceReliability.schema.json` (ISO 25011), which de
 ISO 25040 defines the **Quality Rating Module (QRM)** as its central evaluation artifact: a bundle of quality measures + operational environment + measurement/rating methods. GSM's Norm is a formalized QRM.
 
 | ISO 25040 / 2502n Concept | GSM Norm Field | Correspondence |
-|---------------------------|---------------|----------------|
+| --------------------------- | --------------- | ---------------- |
 | Quality measure (from 2502n) | `assertion` (CEL expression) | The evaluable formula — `self.availabilityTarget != 'BEST_EFFORT'`. 2502n defines formulas in prose; GSM writes them as executable CEL. |
 | Measurement source | `qualifier` (Archetype ref) | Points to the archetype whose properties the assertion evaluates — determines what data is needed |
 | Operational environment (where/when applies) | `applicability` (CEL expression) | `DeploymentProperties.environment == "production"` — scopes the evaluation context |
@@ -397,7 +397,7 @@ ISO 25040 defines the **Quality Rating Module (QRM)** as its central evaluation 
 ### Compatibility summary
 
 | SQuaRE Division | GSM Compatibility | Status |
-|-----------------|------------------|--------|
+| ----------------- | ------------------ | -------- |
 | 2501n (Models) | Quality characteristics → **Archetype schemas** (property vocabularies) | **Sourced** — 39 schemas across 3 models |
 | 25030 (Requirements) | Quality requirement framework → **Directive grammar** (modal × verb × qualifier × purpose) | **Operationalized** — embodied in `Directive`, not separately sourceable |
 | 2502n (Measurement) | Quality measures → **Norm assertions** (CEL expressions) | **Compatible** — future assertion catalogs |
@@ -461,7 +461,7 @@ GDPR Art 5(1)(d) mandates data accuracy as a legal obligation with enforcement c
 **Relationship**: SCAP CPE provides a standardized identification scheme for TOGAF technology-architecture subjects.
 
 | TOGAF Concept | Articulation | SCAP Concept |
-|---------------|-------------|---------------|
+| --------------- | ------------- | --------------- |
 | TechnologyComponent (Structure) | identified by → | ScapPlatformIdentifier (CPE URI + decomposed attributes) |
 | PlatformService (Structure) | identified by → | ScapPlatformIdentifier |
 | LogicalTechnologyComponent (Structure) | platform-scoped by → | ScapPlatformIdentifier.part, .vendor, .product |
@@ -474,7 +474,7 @@ GDPR Art 5(1)(d) mandates data accuracy as a legal obligation with enforcement c
 **Relationship**: SCAP provides the identification substrate for NIS2 Art 21 risk management compliance.
 
 | NIS2 Concept | Articulation | SCAP Concept |
-|-------------|-------------|---------------|
+| ------------- | ------------- | --------------- |
 | Nis2RiskManagementMeasure (Art 21) | scoped to platforms via → | ScapPlatformIdentifier |
 | Nis2RiskManagementMeasure (Art 21) | verified at setting level via → | ScapConfigurationSetting (CCE ID) |
 
@@ -485,7 +485,7 @@ GDPR Art 5(1)(d) mandates data accuracy as a legal obligation with enforcement c
 **Relationship**: SCAP identifies the technology targets that ISO 25010 ProductSecurity measures are evaluated against.
 
 | ISO 25010 Concept | Articulation | SCAP Concept |
-|-------------------|-------------|---------------|
+| ------------------- | ------------- | --------------- |
 | ProductSecurity (quality dimension) | measured on platform identified by → | ScapPlatformIdentifier |
 | ProductSecurity properties (encryption, auth) | checked against settings identified by → | ScapConfigurationSetting |
 
@@ -498,7 +498,7 @@ ITIP is designed to compose multiple frameworks through GSM. The sourced framewo
 ### Regulatory / Legal Frameworks
 
 | Framework | Full Name | Reason Not Yet Sourced |
-|-----------|-----------|------------------------|
+| ----------- | ----------- | ------------------------ |
 | **DORA** | Regulation (EU) 2022/2554 — Digital Operational Resilience Act | Overlaps significantly with NIS2 on ICT risk management; applies specifically to financial entities. Candidate for sourcing when ITIP expands to financial sector governance. Many DORA obligations would articulate with existing NIS2 vocabulary (risk management, incident reporting, supply chain). |
 | **CRA** | Regulation (EU) 2024/2847 — Cyber Resilience Act | Product-level cybersecurity requirements for hardware/software with digital elements. Orthogonal to NIS2 (entity-level) — CRA governs the product lifecycle. Candidate when ITIP models product lifecycle governance. |
 | **PCI-DSS** | Payment Card Industry Data Security Standard v4.0 | Industry standard (not EU regulation) for payment data security. Narrow sector scope — 12 requirements map well to GSM Directives/Norms but serve only payment-processing entities. |
@@ -509,7 +509,7 @@ ITIP is designed to compose multiple frameworks through GSM. The sourced framewo
 ### Architecture / Governance Frameworks
 
 | Framework | Full Name | Reason Not Yet Sourced |
-|-----------|-----------|------------------------|
+| ----------- | ----------- | ------------------------ |
 | **ITIL 4** | ITIL 4 Foundation (Axelos/PeopleCert) | IT Service Management practices. TOGAF already covers architecture governance; ITIL would add operational service management (incident, change, problem). Candidate when ITIP expands to operational governance beyond architecture. |
 | **COBIT 2019** | Control Objectives for Information and Related Technologies | IT governance and management framework. Overlaps with TOGAF governance concepts (principles, requirements, controls). Candidate if ITIP needs a distinct IT audit/control vocabulary. |
 | **SAFe** | Scaled Agile Framework | Agile delivery governance. Different governance paradigm (portfolio → program → team) — not a compliance or quality framework. Candidate if ITIP models delivery governance. |
@@ -518,7 +518,7 @@ ITIP is designed to compose multiple frameworks through GSM. The sourced framewo
 ### Quality / Measurement Standards
 
 | Framework | Full Name | Reason Not Yet Sourced |
-|-----------|-----------|------------------------|
+| ----------- | ----------- | ------------------------ |
 | **ISO 25020–25025** | SQuaRE 2502n — Quality Measurement | Concrete quality measures (formulas, scales) for 2501n characteristics. Would become Norm assertion libraries — not archetype schemas. Candidate when ITIP builds Norm authoring UX. |
 | **ISO 27001/27002** | Information Security Management System | Security controls catalog. NIS2 Art 21 already mandates cybersecurity measures; ISO 27001 controls would provide finer-grained security vocabulary. Candidate when ITIP needs control-level granularity beyond NIS2. |
 | **ISO 22301** | Business Continuity Management | Business continuity framework. NIS2 Art 21(2)(c) already mandates business continuity; ISO 22301 would add detailed BCM vocabulary. Candidate for BCM-heavy sectors. |
@@ -547,7 +547,7 @@ Every sourced framework produces artifacts at all three DNA levels, but each fra
 Frameworks whose primary contribution is **Directives** — they define strategic governance postures, practice mandates, and governance structure that Norms then operationalize. They also produce vocab schemas and Norms, but the Directives are the irreducible core.
 
 | Framework | Full Name / Source | What It Provides | GSM Mapping | Est. Files | Articulation with Sourced Frameworks |
-|-----------|--------------------|------------------|-------------|------------|--------------------------------------|
+| ----------- | -------------------- | ------------------ | ------------- | ------------ | -------------------------------------- |
 | **NIST CSF 2.0** | NIST Cybersecurity Framework 2.0 | 6 Functions (Govern, Identify, Protect, Detect, Respond, Recover), 22 Categories, 106 Subcategories. Outcome-based — describes what to achieve, not how. Broader than pure security (includes Govern function for risk governance). | 6 vocab schemas (one per Function) + **22 Directives** (one per Category) + 106 Norms (one per Subcategory). | ~132 | **NIS2**: Informative References map CSF subcategories to NIS2 articles. **CIS Controls**: CIS provides the "how" for CSF's "what" — CSF Subcategory → CIS Control mapping is published by NIST. **TOGAF**: CSF Govern function articulates with TOGAF ArchitectureGovernance. |
 | **ITIL 4** | ITIL 4 (Axelos/PeopleCert) | **34 practices** across 3 categories for full service operational lifecycle governance. General Management (14), Service Management (17), Technical Management (3). Each practice has properties, KPIs, and processes. | 34+ vocab schemas (one per practice area + core types) + **~34 Directives** (one per practice) + ~60–80 Norms (measurable process compliance). | ~120–140 | **ISO 25011** (strongest): ITIL SLA targets directly implement ServiceReliability, ServiceResponsiveness, ServiceUsability. **NIS2**: Incident → Art 23; Continuity → Art 21(2)(c); Security → Art 21 risk; Supplier → Art 21(2)(d). **GDPR**: Security → Art 32; Service Catalogue tracks Art 30. **TOGAF**: Services → PlatformService; CIs → TechnologyComponents. **SRE**: SLOs implement SLA targets. **DORA Metrics**: Change Enablement → Change Failure Rate. |
 | **SAFe 6.0** | Scaled Agile Framework 6.0 | Portfolio-to-team delivery governance: Value Streams, ARTs, PIs, Epics, WSJF, Lean Budget Guardrails, Flow Metrics. **The only framework governing the organization of work itself** — portfolio economics, delivery flow, PI predictability, WIP governance. | 8+ vocab schemas (ValueStream, ART, PI, Epic, Feature, Enabler, LeanBudgetGuardrail, FlowMetrics) + **~15–20 Directives** (PI cadence, WIP limits, predictability targets, innovation allocation, WSJF) + ~25–35 Norms. | ~55–70 | **TOGAF**: Architectural Runway → ArchitectureRequirements; Enablers → Building Blocks. **DORA Metrics**: SAFe 6.0 incorporates DORA; flowVelocity ≈ Deployment Frequency. **ISO 25010**: Flow metrics → ProductMaintainability. **FinOps**: Lean Budget Guardrails articulate with FinOps. **NIS2**: Compliance Enablers track NIS2 implementation. |
@@ -562,7 +562,7 @@ Frameworks whose primary contribution is **Norms** — they define measurable co
 #### Security
 
 | Framework | Full Name / Source | What It Provides | GSM Mapping | Est. Files | Articulation with Sourced Frameworks |
-|-----------|--------------------|------------------|-------------|------------|--------------------------------------|
+| ----------- | -------------------- | ------------------ | ------------- | ------------ | -------------------------------------- |
 | **CIS Controls v8** | Center for Internet Security Controls v8 | 18 Controls, **153 Safeguards** organized by Implementation Group (IG1/IG2/IG3). Bridges regulatory mandates to actionable safeguards. | 2 vocab schemas (CISControlCategory, CISImplementationGroup) + 18 Directives + **153 Norms** (one per Safeguard). Applicability scopes by IG level. | ~173 | **NIS2**: Art 21 10 measures map 1:1 to CIS Control groups — CIS provides safeguard-level granularity. **ISO 25010**: Safeguard assertions reference ProductSecurity properties. **TOGAF**: Controls map to ArchitectureRequirements. **CIS Benchmarks / STIGs**: Controls → abstract requirement; Benchmarks/STIGs → technology-specific implementation. |
 | **OWASP Top 10 (2021)** | OWASP Top 10 Web Application Security Risks | 10 risk categories (Broken Access Control, Cryptographic Failures, Injection, Insecure Design, etc.). Smallest security framework — high signal, low effort. | 1 vocab schema (OWASPRiskCategory) + 10 Directives + **~30 Norms** (2–4 per category). | ~50 | **NIS2**: each Top 10 category maps to at least one Art 21 measure. **OWASP ASVS**: Top 10 is the summary; ASVS is the detail. **ISO 25010**: risk categories reference ProductSecurity properties. |
 | **OWASP ASVS v4.0.3** | OWASP Application Security Verification Standard | **286 requirements** across 14 chapters at 3 verification levels (L1/L2/L3). | 14 vocab schemas + 14 Directives + **286 Norms**. Applicability scopes by verification level. | ~302 | **GDPR**: Art 25 Data Protection by Design → ASVS V8, V9. **NIS2**: Art 21 measures → ASVS chapters (V2 Auth, V6 Crypto). **ISO 25010**: assertions reference ProductSecurity properties. |
@@ -575,7 +575,7 @@ Frameworks whose primary contribution is **Norms** — they define measurable co
 #### Operational / Reliability
 
 | Framework | Full Name / Source | What It Provides | GSM Mapping | Est. Files | Articulation with Sourced Frameworks |
-|-----------|--------------------|------------------|-------------|------------|--------------------------------------|
+| ----------- | -------------------- | ------------------ | ------------- | ------------ | -------------------------------------- |
 | **SRE Practices** | Google Site Reliability Engineering (O'Reilly, 2016 + 2018) | SLOs, Error Budgets, Toil Budgets, Incident Management, Capacity Planning. Defines **how** to set, measure, and enforce service reliability targets. | 3–4 vocab schemas (SLO, ErrorBudget, ToilBudget, IncidentSeverity) + Directives per practice + **Norms encoding SLO/burn-rate assertions**. | ~40–60 | **ISO 25010**: SLOs reference ProductReliability, ProductPerformanceEfficiency. **ISO 25011**: SLOs → ServiceReliability.availabilityTarget, ServiceResponsiveness.latencyTarget. **TOGAF**: SRE → ArchitectureRequirements for operational architecture. **NIS2**: incident management → Art 23 reporting. |
 | **Twelve-Factor App** | 12factor.net (Heroku, 2011) | 12 factors for cloud-native applications (Codebase, Dependencies, Config, Backing Services, Build/Release/Run, Processes, Port Binding, Concurrency, Disposability, Dev/Prod Parity, Logs, Admin Processes). | 1 vocab schema (TwelveFactorCategory) + 12 Directives + **~24 Norms** (1–2 per factor). | ~37 | **TOGAF**: factors constrain LogicalApplicationComponent and TechnologyComponent design. **ISO 25010**: factors → ProductMaintainability, ProductPortability, ProductPerformanceEfficiency. **SRE**: Twelve-Factor is the app-design prerequisite for SRE practices. |
 | **DORA Metrics** | DevOps Research and Assessment (Accelerate, 2018) — NOT EU DORA Regulation | 4 delivery metrics (Deployment Frequency, Lead Time, Change Failure Rate, MTTR) + 1 reliability metric (Availability). Elite/High/Medium/Low tiers. | 1 vocab schema (DORAMetricTier) + 1 Directive + **4–5 Norms** (one per metric threshold). | ~8–10 | **SRE**: MTTR ↔ SRE incident management and error budgets. **ISO 25010**: Deployment Frequency → ProductMaintainability; Change Failure Rate → ProductReliability. **TOGAF**: metrics govern CI/CD as a TechnologyService. **SAFe**: flowVelocity ≈ Deployment Frequency, flowTime ≈ Lead Time. |
@@ -598,7 +598,7 @@ Frameworks whose primary contribution is **Norms** — they define measurable co
 Frameworks whose primary contribution is **vocab schemas** — they define typed properties on subjects (GSM archetypes / subject types). These are the schemas that Norm assertions reference. Directives and Norms also arise, but the vocabulary itself is the irreducible core. **These should generally be sourced first**, because Norm-primary frameworks above need these properties to exist before their assertions can reference them.
 
 | Framework | Full Name / Source | What It Provides | GSM Mapping | Est. Files | Articulation with Sourced Frameworks |
-|-----------|--------------------|------------------|-------------|------------|--------------------------------------|
+| ----------- | -------------------- | ------------------ | ------------- | ------------ | -------------------------------------- |
 | **SCAP (remaining)** | NIST SCAP — OVAL + XCCDF + ARF + CVSS + CVE | **Assessment and reporting vocabulary.** CPE + CCE are now sourced (see Sourced Models). Remaining components: OVAL (executable checks → Mechanism rules), XCCDF (checklist bundling → Norm profiles), ARF (result reporting → Effector/Receptor payloads), CVSS (vulnerability scoring → rootless quality dimension), CVE (vulnerability identification → rootless identification). | OVAL → Mechanism; XCCDF → rootless (checklist profile); ARF → rootless (result record); CVSS → rootless (severity score); CVE → rootless (vulnerability identifier). | ~8–12 | **SCAP CPE/CCE** (sourced): identification substrate is in place. OVAL/XCCDF consume CPE/CCE identifiers. **CIS Benchmarks/STIGs**: distributed as XCCDF+OVAL content. **NIS2**: SCAP assessment results → Art 21 compliance evidence. |
 | **DMTF CIM/Redfish** | Distributed Management Task Force — Common Information Model (CIM 2.x) + Redfish API (JSON Schema) | **Comprehensive infrastructure property vocabulary.** CIM defines ~1,080 classes with typed properties across 13 schema areas (Core, System, Device, Network, Storage, Application, Database, User/Security, Metrics, Physical, Event, Policy). Redfish exposes ~350 as modern JSON Schema resources. | **Curated subset (~40–60 key resources) as technology-specific extensions of TOGAF Structures.** 10–15 domain-area vocab schemas (Compute, Storage, Network, Physical, OS, Database, Application, Web/Middleware, Virtualization, Container). Each extends a TOGAF Structure with CIM-sourced typed properties (e.g., TechnologyComponent + ComputeSystem → `totalCores`, `memoryGiB`, `firmwareVersion`, `powerState`). + ~20 Directives + ~40 Norms. | ~75–90 | **TOGAF**: CIM/Redfish makes TOGAF Structures technology-specific — `TechnologyComponent` gains `totalCores`, `storageType`, `osVersion`; `PlatformService` gains `dbEngine`, `maxConnections`. **SCAP/CPE**: CPE identifies the technology; CIM defines its property schema. **CIS Benchmarks/STIGs**: Norm assertions check CIM-sourced properties. **ISO 25010**: CIM health/state properties feed ProductReliability, ProductAvailability. |
 | **OpenConfig/YANG** | OpenConfig Consortium (Google, Microsoft, AT&T) + IETF YANG (RFC 7950) | **Vendor-neutral network device property vocabulary.** Typed properties for: interfaces (`mtu`, `speed`, `operStatus`), BGP (`peerAs`, `holdTime`), ACLs (`sourceAddress`, `action`), system (`hostname`, `ntpServers`), platform (`chassis`, `temperatures`), QoS (`classifiers`, `queues`). | **5–8 vocab schemas** (Interfaces, Routing/BGP, ACL/Firewall, System, Platform/Hardware, QoS) extending TOGAF InfrastructureService / TechnologyComponent for network devices. + Norms for network config compliance. | ~30–50 | **CIM/Redfish**: OpenConfig supersedes CIM Network classes for modern network devices. CIM covers compute/storage; OpenConfig covers network. Together = full infrastructure vocabulary. **CIS Benchmarks**: Cisco IOS, Juniper, Palo Alto rules check OpenConfig-defined properties. **NIS2**: Art 21(2)(e) network security → OpenConfig ACL/firewall properties. **TOGAF**: InfrastructureService gets standardized network properties. |
@@ -608,7 +608,7 @@ Frameworks whose primary contribution is **vocab schemas** — they define typed
 Based on the DNA principle (vocabulary schemas before Norm-heavy frameworks, because Norm assertions reference vocab properties) and governance coverage gaps:
 
 | Priority | Framework | DNA Level | Rationale |
-|----------|-----------|-----------|-----------|
+| ---------- | ----------- | ----------- | ----------- |
 | 1 | **CIM/Redfish** (curated) | Ascription (vocab) | **Infrastructure vocabulary**: makes TOGAF Structures technology-specific. Required before Norm-heavy frameworks can write property-referencing assertions. SCAP CPE/CCE (now sourced) provides identification; CIM provides the property schemas. |
 | 2 | **CIS Controls v8** | Norm | Bridges the NIS2 Art 21 → safeguards gap. Highest articulation density with existing regulatory frameworks. |
 | 3 | **GSF SCI** | Norm | Tiny (~8 files), critical in current political/regulatory context (EU CSRD, ESRS). First sustainability governance metric. |

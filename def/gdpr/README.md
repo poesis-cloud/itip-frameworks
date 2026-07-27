@@ -9,7 +9,7 @@
 **Model type**: Regulatory — the second regulatory model in ITIP (after NIS2). Like NIS2, GDPR operates at **two P8 layers simultaneously**:
 
 | Layer | What it produces | File naming |
-|-------|-----------------|-------------|
+| ------- | ----------------- | ------------- |
 | **P8 Layer 2 — Archetype schemas** | GDPR-specific vocabulary (processing principles, lawful bases, data subject rights, controller roles, breach types, transfer mechanisms) | `{Title}.schema.json` |
 | **P8 Layer 3 — Sourced Directives** | Concrete legal mandates from GDPR articles, expressed in GSM Directive grammar | `{ConceptName}SourcedDirective.json` |
 | **P8 Layer 3 — Sourced Norms** | Concrete measurable requirements from GDPR articles, expressed in GSM Norm grammar | `{ConceptName}SourcedNorm.json` |
@@ -21,7 +21,7 @@ GDPR is the most comprehensive EU data protection regulation. It produces dense 
 GDPR is organized by its regulatory concerns (not by GSM subject type per P9):
 
 | Folder | GDPR Source | Purpose |
-|--------|------------|---------|
+| -------- | ------------ | --------- |
 | `principles/` | Art 5 | Seven foundational processing principles |
 | `lawful-basis/` | Art 6–9 | Lawful bases for processing, consent conditions, special category restrictions |
 | `data-subject-rights/` | Art 12–22 | Transparency obligations and individual rights (access, rectification, erasure, portability, objection, automated decisions) |
@@ -35,7 +35,7 @@ GDPR is organized by its regulatory concerns (not by GSM subject type per P9):
 ### Vocabulary Schemas (archetype schemas)
 
 | GDPR Concept | GSM Subject Type | Folder | Schema Title | Source |
-|-------------|-----------------|--------|--------------|--------|
+| ------------- | ----------------- | -------- | -------------- | -------- |
 | Processing principles | Rootless | principles/ | GdprProcessingPrinciple | Art 5 |
 | Lawful basis for processing | Rootless | lawful-basis/ | GdprLawfulBasis | Art 6 |
 | Consent conditions | Rootless | lawful-basis/ | GdprConsent | Art 7–8 |
@@ -57,7 +57,7 @@ All schemas are **rootless** (no top-level `$ref` to a GSM base). GDPR concepts 
 ### Sourced Directives (legal mandates)
 
 | Directive | GSM Grammar | Source | Operationalized by |
-|-----------|------------|--------|-------------------|
+| ----------- | ------------ | -------- | ------------------- |
 | Art5-ProcessingPrinciples | `MUST ENSURE GdprProcessingPrinciple` | Art 5 | 7 Norms (one per principle) |
 | Art6-LawfulProcessing | `MUST ENSURE GdprLawfulBasis` | Art 6 | 1 Norm (documented basis) |
 | Art7-ConsentRequirements | `MUST ENSURE GdprConsent` | Art 7 | 4 Norms (demonstrable, distinguishable, withdrawable, freely given) |
@@ -92,7 +92,7 @@ All schemas are **rootless** (no top-level `$ref` to a GSM base). GDPR concepts 
 #### Principles Norms (operationalize Art 5 Directive)
 
 | Norm | Assertion | Source |
-|------|-----------|--------|
+| ------ | ----------- | -------- |
 | Art5-1a-LawfulnessFairnessTransparency | `self.principleCompliant == true` | Art 5(1)(a) |
 | Art5-1b-PurposeLimitation | `self.principleCompliant == true` | Art 5(1)(b) |
 | Art5-1c-DataMinimisation | `self.principleCompliant == true` | Art 5(1)(c) |
@@ -106,7 +106,7 @@ All 7 norms use applicability: `GdprControllerProcessorRole.role in ['CONTROLLER
 #### Lawful Basis Norms (operationalize Art 6, Art 7, Art 8, Art 9 Directives)
 
 | Norm | Guard (scope) | Assertion | Source |
-|------|--------------|-----------|--------|
+| ------ | -------------- | ----------- | -------- |
 | Art6-1-LawfulBasisDocumented | controller role | `self.lawfulBasisDocumented == true` | Art 6(1) |
 | Art7-1-ConsentDemonstrable | controller + `lawfulBasis == 'CONSENT'` | `self.consentDemonstrable == true` | Art 7(1) |
 | Art7-2-ConsentDistinguishable | controller + `lawfulBasis == 'CONSENT'` | `self.consentDistinguishable == true` | Art 7(2) |
@@ -120,7 +120,7 @@ Consent norms use compound applicability expressions: controller role + lawful b
 #### Data Subject Rights Norms (operationalize Art 12–22 Directives)
 
 | Norm | Guard (right scope) | Assertion | Temporal | Source |
-|------|-------------------|-----------|----------|--------|
+| ------ | ------------------- | ----------- | ---------- | -------- |
 | Art12-3-ResponseTimeliness | `requestReceived == true` | `self.responseTimeDays <= 30` | `P1M` | Art 12(3) |
 | Art12-5-RequestFree | `requestReceived == true` | `self.exemptionApplied == false \|\| self.exemptionBasis != ''` | — | Art 12(5) |
 | Art13-1-InformationProvidedAtCollection | controller role | `self.informationProvided == true && self.conciseTransparentIntelligible == true` | — | Art 13(1)–(2) |
@@ -142,7 +142,7 @@ Art 12(3) is a temporal norm: response within 1 month (extendable by 2 months fo
 #### Controller/Processor Norms (operationalize Art 25, Art 26, Art 28, Art 30, Art 32, Art 37 Directives)
 
 | Norm | Guard (scope) | Assertion | Source |
-|------|--------------|-----------|--------|
+| ------ | -------------- | ----------- | -------- |
 | Art25-1-DesignMeasuresImplemented | controller role | `self.technicalMeasuresImplemented == true && self.organisationalMeasuresImplemented == true` | Art 25(1) |
 | Art25-2-DefaultMinimalProcessing | controller role | `self.defaultDataMinimisation == true && self.processingLimitedByDefault == true` | Art 25(2) |
 | Art26-1-ArrangementDocumented | `role == 'JOINT_CONTROLLER'` | `self.jointControllerArrangement == true` | Art 26(1) |
@@ -165,7 +165,7 @@ Art 26 norms apply only to joint controllers. Art 28 norms are cascaded: contrac
 #### Breach Notification Norms (operationalize Art 33, Art 34 Directives)
 
 | Norm | Guard | Assertion | Temporal | Source |
-|------|-------|-----------|----------|--------|
+| ------ | ------- | ----------- | ---------- | -------- |
 | Art33-1-AuthorityNotification72h | breach + risk != UNLIKELY | `self.authorityNotified == true && self.authorityNotificationHours <= 72` | `PT72H` | Art 33(1) |
 | Art33-3-NotificationContentsComplete | breach + `authorityNotified == true` | `self.notificationContentsComplete == true` | — | Art 33(3) |
 | Art33-5-BreachDocumented | breach occurred | `self.breachDocumented == true` | — | Art 33(5) |
@@ -176,7 +176,7 @@ Art 33(1) is a temporal norm: 72 hours from breach awareness (parallels NIS2 Art
 #### Impact Assessment Norms (operationalize Art 35 Directive)
 
 | Norm | Guard | Assertion | Source |
-|------|-------|-----------|--------|
+| ------ | ------- | ----------- | -------- |
 | Art35-1-DpiaConducted | controller + `highRiskProcessing == true` | `self.dpiaConducted == true` | Art 35(1) |
 | Art35-7-DpiaContentsComplete | controller + `dpiaConducted == true` | `self.dpiaContentsComplete == true` | Art 35(7) |
 | Art36-1-PriorConsultation | controller + `residualHighRisk == true` | `self.priorConsultationCompleted == true` | Art 36(1) |
@@ -186,7 +186,7 @@ Cascaded: DPIA required → contents verified → prior consultation if residual
 #### Transfer Norms (operationalize Art 44 Directive)
 
 | Norm | Guard (mechanism scope) | Assertion | Source |
-|------|----------------------|-----------|--------|
+| ------ | ---------------------- | ----------- | -------- |
 | Art44-1-TransferSafeguardInPlace | `internationalTransfer == true` | `self.transferSafeguardInPlace == true` | Art 44 |
 | Art45-1-AdequacyDecision | mechanism == `ADEQUACY_DECISION` | `self.transferSafeguardInPlace == true` | Art 45(1) |
 | Art46-1-AppropriateSafeguards | mechanism in SCCs/BCRs/codes/certs | `self.transferSafeguardInPlace == true && self.supplementaryMeasuresApplied == true` | Art 46(1-2) |
@@ -198,7 +198,7 @@ Art 46 norms require supplementary measures (Schrems II — CJEU C-311/18). EDPB
 ## Excluded GDPR Concepts (with reason)
 
 | GDPR Concept | Articles | Reason for Exclusion |
-|-------------|----------|---------------------|
+| ------------- | ---------- | --------------------- |
 | Supervisory authority organization | Art 51–59 | Member State institutional structure — not sourceable as entity-level governance |
 | Cooperation and consistency | Art 60–76 | EU-level institutional coordination (one-stop-shop, EDPB) — outside entity governance scope |
 | Remedies and penalties | Art 77–84 | Enforcement consequence, not governance definition — not a Directive/Norm pattern |
@@ -214,7 +214,7 @@ Art 46 norms require supplementary measures (Schrems II — CJEU C-311/18). EDPB
 GDPR and NIS2 use fundamentally different scoping applicability:
 
 | Dimension | NIS2 | GDPR |
-|-----------|------|------|
+| ----------- | ------ | ------ |
 | **Scoping mechanism** | Entity tier classification (ESSENTIAL/IMPORTANT) | Controller/processor role classification |
 | **Applicability expression** | `Nis2EntityClassification.entityTier in ['ESSENTIAL', 'IMPORTANT']` | `GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER']` |
 | **Scope breadth** | 18 critical sectors (Annexes I/II) | Any entity processing personal data of EU residents |
@@ -293,7 +293,7 @@ See `../README.md` for full articulation analysis including:
 ## File Inventory
 
 | Type | Naming | Count | Files |
-|------|--------|-------|-------|
+| ------ | -------- | ------- | ------- |
 | Vocabulary schemas | `*.schema.json` | 15 | GdprProcessingPrinciple, GdprLawfulBasis, GdprConsent, GdprSpecialCategoryData, GdprDataSubjectRight, GdprTransparencyObligation, GdprControllerProcessorRole, GdprProcessingActivity, GdprDataProtectionByDesign, GdprDataProtectionOfficer, GdprProcessorAgreement, GdprSecurityMeasure, GdprDataBreach, GdprImpactAssessment, GdprTransferMechanism |
 | Sourced Directives | `*SourcedDirective.json` | 26 | ProcessingPrinciples, LawfulProcessing, ConsentRequirements, ChildConsent, SpecialCategoryRestriction, TransparentCommunication, InformationDirectCollection, InformationIndirectCollection, RightOfAccess, RightToRectification, RightToErasure, RightToRestriction, NotificationObligation, RightToPortability, RightToObject, AutomatedDecisionMaking, DataProtectionByDesign, JointControllers, ProcessorObligations, RecordsOfProcessing, SecurityOfProcessing, DpoDesignation, BreachNotificationAuthority, BreachNotificationSubject, DPIA, TransferRestriction |
 | Sourced Norms | `*SourcedNorm.json` | 57 | 7 principles (Art5), 7 lawful-basis (Art6-9), 15 data-subject-rights (Art12-22), 16 controller-processor (Art25-39), 4 breach-notification (Art33-34), 3 impact-assessment (Art35-36), 5 transfers (Art44-49) |

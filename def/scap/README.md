@@ -3,7 +3,7 @@
 ## Model Identification
 
 | Field | Value |
-|-------|-------|
+| ------- | ------- |
 | **Model** | SCAP (Security Content Automation Protocol) |
 | **Source Standards** | NIST SP 800-126 r3 (SCAP 1.3), NIST IR 7695 (CPE 2.3 Naming), NIST CCE List |
 | **Authority** | National Institute of Standards and Technology (NIST), MITRE Corporation |
@@ -29,14 +29,14 @@ SCAP organizes itself into component specifications. Each sourced component gets
 ## Mapping Table
 
 | Model Concept | GSM Subject Type | Domain Folder | Schema File | Notes |
-|---------------|-----------------|---------------|-------------|-------|
+| --------------- | ----------------- | --------------- | ------------- | ------- |
 | Platform Identifier | rootless | cpe | `ScapPlatformIdentifier.schema.json` | Decomposes CPE 2.3 WFN attributes into typed properties. Cross-cutting: ascribable to any technology-typed subject. |
 | Configuration Setting | rootless | cce | `ScapConfigurationSetting.schema.json` | Uniquely identifies configuration guidance statements. Links to platform via CPE URI. |
 
 ## Excluded Concepts (with reason)
 
 | SCAP Component | Reason |
-|----------------|--------|
+| ---------------- | -------- |
 | **OVAL** (Open Vulnerability and Assessment Language) | Assessment execution language — maps to Mechanism rules (Starlark), not vocabulary schemas. Candidate for future sourcing as Mechanism archetypes when ITIP models assessment execution. |
 | **XCCDF** (Extensible Configuration Checklist Description Format) | Checklist bundling format — analogous to a Norm collection/profile. Candidate when ITIP models governance profile composition. |
 | **ARF** (Asset Reporting Format) | Result reporting format — maps to Effector/Receptor payloads (observation data), not definition vocabulary. Candidate when ITIP models compliance reporting. |

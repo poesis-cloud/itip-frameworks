@@ -9,7 +9,7 @@
 **Model type**: Regulatory — the first regulatory model in ITIP. Unlike quality models (ISO 25010/25011/25012) and architecture models (TOGAF) which define **vocabularies only** (P8 Layer 2 — archetype schemas), NIS2 operates at **two P8 layers simultaneously**:
 
 | Layer | What it produces | File extension |
-|-------|-----------------|----------------|
+| ------- | ----------------- | ---------------- |
 | **P8 Layer 2 — Archetype schemas** | NIS2-specific vocabulary (entity classification, measure categories, reporting stages) | `.schema.json` |
 | **P8 Layer 3 — Sourced Directives** | Concrete legal mandates from NIS2 articles, expressed in GSM Directive grammar | `*SourcedDirective.json` |
 | **P8 Layer 3 — Sourced Norms** | Concrete measurable requirements from NIS2 articles, expressed in GSM Norm grammar | `*SourcedNorm.json` |
@@ -21,7 +21,7 @@ This dual-layer pattern is the hallmark of **regulatory models**: the European P
 NIS2 is organized by its regulatory concerns (not by GSM subject type per P9):
 
 | Folder | NIS2 Source | Purpose |
-|--------|------------|---------|
+| -------- | ------------ | --------- |
 | `entity-classification/` | Art 2–3, Annexes I/II | Who falls under NIS2 and at what obligation tier |
 | `risk-management/` | Art 20–21 | Governance accountability + 10 mandatory cybersecurity measures |
 | `incident-reporting/` | Art 23 | Multi-stage incident notification pipeline with temporal deadlines |
@@ -32,7 +32,7 @@ NIS2 is organized by its regulatory concerns (not by GSM subject type per P9):
 ### Vocabulary Schemas (archetype schemas)
 
 | NIS2 Concept | GSM Subject Type | Folder | Schema Title | Source |
-|-------------|-----------------|--------|--------------|--------|
+| ------------- | ----------------- | -------- | -------------- | -------- |
 | Entity classification (essential/important) | Rootless | entity-classification/ | Nis2EntityClassification | Art 3 |
 | Sector scope (Annex I/II sectors) | Rootless | entity-classification/ | Nis2SectorScope | Annexes I, II |
 | Governance accountability | Rootless | risk-management/ | Nis2GovernanceAccountability | Art 20 |
@@ -45,7 +45,7 @@ All schemas are **rootless** (no top-level `$ref` to a GSM base). NIS2 concepts 
 ### Sourced Directives (legal mandates)
 
 | Directive | GSM Grammar | Source | Operationalized by |
-|-----------|------------|--------|-------------------|
+| ----------- | ------------ | -------- | ------------------- |
 | Art20-GovernanceAccountability | `MUST ENSURE Nis2GovernanceAccountability` | Art 20 | 3 Norms (approval, management training, employee training) |
 | Art21-RiskManagement | `MUST ENSURE Nis2RiskManagementMeasure` | Art 21(1-2) | 10 Norms (one per measure category) |
 | Art23-IncidentReporting | `MUST ENSURE Nis2IncidentReporting` | Art 23 | 4 Norms (24h, 72h, intermediate, 1mo deadlines) |
@@ -58,7 +58,7 @@ All schemas are **rootless** (no top-level `$ref` to a GSM base). NIS2 concepts 
 #### Governance Norms (operationalize Art 20 Directive)
 
 | Norm | Assertion | Source |
-|------|-----------|--------|
+| ------ | ----------- | -------- |
 | Art20-1-ManagementApproval | `self.managementApproval == true` | Art 20(1) |
 | Art20-2-ManagementTraining | `self.trainingCompleted == true` | Art 20(2) |
 | Art20-3-EmployeeTraining | `employeeTrainingOffered == true` | Art 20(2) |
@@ -66,7 +66,7 @@ All schemas are **rootless** (no top-level `$ref` to a GSM base). NIS2 concepts 
 #### Risk Management Norms (operationalize Art 21 Directive)
 
 | Norm | Guard (measure scope) | Assertion | Source |
-|------|----------------------|-----------|--------|
+| ------ | ---------------------- | ----------- | -------- |
 | Art21-2a-RiskAnalysisPolicy | `measureCategory == 'RISK_ANALYSIS_AND_IS_SECURITY_POLICY'` | `implementationLevel != 'NOT_IMPLEMENTED'` | Art 21(2)(a) |
 | Art21-2b-IncidentHandling | `measureCategory == 'INCIDENT_HANDLING'` | `implementationLevel != 'NOT_IMPLEMENTED'` | Art 21(2)(b) |
 | Art21-2c-BusinessContinuity | `measureCategory == 'BUSINESS_CONTINUITY_AND_CRISIS_MANAGEMENT'` | `implementationLevel != 'NOT_IMPLEMENTED'` | Art 21(2)(c) |
@@ -83,7 +83,7 @@ All 10 norms use `toleranceMode: STRICT` — NIS2 mandates are non-negotiable fo
 #### Incident Reporting Norms (operationalize Art 23 Directive)
 
 | Norm | Guard (stage scope) | Assertion | Temporal Window | Source |
-|------|--------------------|-----------|-----------------|--------|
+| ------ | -------------------- | ----------- | ----------------- | -------- |
 | Art23-4a-EarlyWarning-24h | `significantIncident == true && reportingStage == 'EARLY_WARNING'` | `deadlineHours <= 24` | `PT24H` | Art 23(4)(a) |
 | Art23-4b-Notification-72h | `significantIncident == true && reportingStage == 'INCIDENT_NOTIFICATION'` | `deadlineHours <= 72` | `PT72H` | Art 23(4)(b) |
 | Art23-4c-IntermediateReport | `significantIncident == true && reportingStage == 'INTERMEDIATE_REPORT'` | `deadlineHours <= 720` | — | Art 23(4)(c) |
@@ -94,7 +94,7 @@ Temporal norms encode `temporalWindow` in ISO 8601 — earliest GSM norm instanc
 #### Supply Chain Norms (operationalize Art 21(2)(d) Directive)
 
 | Norm | Assertion | Source |
-|------|-----------|--------|
+| ------ | ----------- | -------- |
 | Art21-2d-SupplierAssessment | `supplierAssessmentCompleted == true` | Art 21(2)(d) |
 | Art21-2d-SupplierSecurityPosture | `supplierSecurityLevel != 'NOT_ASSESSED' && supplierSecurityLevel != 'INADEQUATE'` | Art 21(2)(d) |
 | Art21-2d-VulnerabilityDisclosure | `vulnerabilityManagementIncluded == true` | Art 21(2)(d) |
@@ -105,7 +105,7 @@ Supply chain norms use chained applicability: `SupplierSecurityPosture` and `Sec
 ## Excluded NIS2 Concepts (with reason)
 
 | NIS2 Concept | Articles | Reason for Exclusion |
-|-------------|----------|---------------------|
+| ------------- | ---------- | --------------------- |
 | National CSIRT/authority organization | Art 8–13 | Member State institutional structure — not sourceable as entity-level governance |
 | Cooperation Group / EU-CyCLONe | Art 14–16 | EU-level institutional coordination — outside entity governance scope |
 | Peer reviews | Art 19 | Process between Member States — not entity-level |
@@ -180,7 +180,7 @@ This convention is reusable for GDPR, DORA, CRA, SOX, PCI-DSS, and any other reg
 ## File Inventory
 
 | Type | Count | Files |
-|------|-------|-------|
+| ------ | ------- | ------- |
 | Vocabulary schemas | 6 | Nis2EntityClassification, Nis2SectorScope, Nis2GovernanceAccountability, Nis2RiskManagementMeasure, Nis2IncidentReporting, Nis2SupplyChainSecurity |
 | Sourced Directives | 4 | Art20-GovernanceAccountability, Art21-RiskManagement, Art23-IncidentReporting, Art21-2d-SupplyChainSecurity |
 | Sourced Norms | 15 | 2 governance (Art20), 10 risk-management (Art21-2a through 2j), 3 incident-reporting (Art23-4a, 4b, 4d) |

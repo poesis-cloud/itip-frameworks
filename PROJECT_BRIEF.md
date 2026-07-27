@@ -26,7 +26,7 @@ This repo has no execution architecture of its own. It is a **content source** r
 ## 5. Key Files Map
 
 | Area | Path | Contents |
-|------|------|----------|
+| ------ | ------ | ---------- |
 | Inter-model composition | `def/README.md` | Composition principle, dynamic/static paradigm, articulation maps |
 | ITIP domain archetypes | `def/itip/` | SourcedDirective, SourcedNorm, meta-governance mechanisms |
 | Sourced frameworks | `def/{authority}/` | One folder per authority (togaf, iso25000, gdpr, nis2, scap, http, ...) |
@@ -36,7 +36,7 @@ This repo has no execution architecture of its own. It is a **content source** r
 This repo is content-only (no dev/QA sprint cycle in the application sense). Maintenance follows the same team pattern as sibling ITIP repos:
 
 | Agent | Name | Role |
-|-------|------|------|
+| ------- | ------ | ------ |
 | Producer | **Remy** | Sourcing backlog, provenance review, GitHub Issues |
 | Dev | **Nova / Sage / Milo** | Author/update schemas, maintain inter-model articulation docs |
 | QA | **Ivy** | Schema validity checks, provenance citation review |
@@ -50,13 +50,16 @@ This repo is content-only (no dev/QA sprint cycle in the application sense). Mai
 ## 8. Current State (rewrite every sprint)
 
 **What works:**
+
 - Full sourced schema set for TOGAF, ISO 25000, NIS2, GDPR, SCAP, HTTP, ITIP domain archetypes; reserved README-only placeholders for aDRI-IRN, gRPC, GraphQL, Kafka, AMQP, WebSocket, JDBC.
 
 **What does not work yet:**
+
 - No CI/validation pipeline configured.
 - No automated cross-check that `gsmarc://itip/frameworks/...` `$id` values stay unique across the corpus.
 
 **What is next:**
+
 - Add a JSON Schema lint/validate CI job.
 
 ## 9. Security Rules

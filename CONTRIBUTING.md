@@ -1,6 +1,6 @@
 # Contributing to ITIP Frameworks
 
-This repository is published under the Apache License, Version 2.0 (Apache-2.0) (see `LICENSE`). It can be distributed and published independently of the Poesis workspace, so its contribution terms are **self-contained here** and travel with the repository.
+This repository is published under the Business Source License 1.1 (BUSL-1.1) (see `LICENSE`). It can be distributed and published independently of the Poesis workspace, so its contribution terms are **self-contained here** and travel with the repository.
 
 Contributions are accepted under **two gates** — provenance (DCO) and rights (CLA). The maintainer is **Clément Cazaud**, who is not obligated to accept any contribution.
 
@@ -55,7 +55,7 @@ By making a contribution to this project, I certify that:
 By submitting a contribution, you agree that:
 
 - **Copyright** — you grant the maintainer a perpetual, worldwide, non-exclusive, irrevocable, royalty-free license to use, reproduce, modify, prepare derivative works of, publicly display and perform, sublicense, and distribute your contribution.
-- **Relicensing** — you grant the maintainer the right to relicense your contribution under any terms (proprietary, source-available, copyleft, permissive, or commercial dual-license). This preserves permissive distribution and future dual-licensing flexibility.
+- **Relicensing** — you grant the maintainer the right to relicense your contribution under any terms (proprietary, source-available, copyleft, permissive, or commercial dual-license). This preserves the BUSL source-available model, its AGPL Change License conversion, and commercial dual-licensing.
 - **Patents** — you grant a perpetual, worldwide, non-exclusive, royalty-free, irrevocable patent license covering your contribution and derivative works of it.
 - **Representations** — you have the legal right to submit the contribution, and it is your original work or you have sufficient rights to submit it.
 - **No trademark grant** — no contribution, license, or merge grants any trademark right; see `TRADEMARK.md`.

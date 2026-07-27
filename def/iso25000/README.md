@@ -28,7 +28,7 @@ Each sub-standard retains its own directory and internal README. Quality charact
 ## Sourced Standards
 
 | Standard | Edition | Scope | Schemas |
-|----------|---------|-------|---------|
+| ---------- | --------- | ------- | --------- |
 | **ISO 25010** | ISO/IEC 25010:2011 | Product Quality (8 chars) + Quality in Use (5 chars) | 16 |
 | **ISO 25011** | ISO/IEC TS 25011:2017 | IT Service Quality (8 chars); reuses 25010 Quality in Use | 8 |
 | **ISO 25012** | ISO/IEC 25012:2008 | Data Quality (15 chars across 3 viewpoints) | 15 |
@@ -47,7 +47,7 @@ ISO 25011 explicitly reuses ISO 25010's Quality in Use model (Effectiveness, Eff
 ## Inter-Standard Disambiguation
 
 | ISO 25010 (Product) | vs | ISO 25012 (Data) | vs | ISO 25011 (Service) |
-|---------------------|----|-------------------|----|---------------------|
+| --------------------- | ---- | ------------------- | ---- | --------------------- |
 | ProductAvailability — system uptime | ≠ | DataAvailability — data retrievable | ≠ | ServiceReliability — service continuity |
 | ProductSecurity — system secure | ≠ | DataConfidentiality — data protected | ≠ | ServiceSecurity — service-level security |
 | ProductPortability — system portable | ≠ | DataPortability — data movable | ≠ | ServiceAdaptability — service customizable |
@@ -60,7 +60,7 @@ ISO 25011 explicitly reuses ISO 25010's Quality in Use model (Effectiveness, Eff
 ## Excluded SQuaRE Divisions (with justification)
 
 | SQuaRE Division | Standards | Reason for Exclusion |
-|-----------------|-----------|---------------------|
+| ----------------- | ----------- | --------------------- |
 | **2500n — Management** | 25000, 25001, 25002 | Process guidance, common terminology, planning overview — not a quality model; no characteristics to source as archetypes |
 | **2502n — Measurement** | 25020, 25022–25025 | Concrete quality measures (formulas, scales, thresholds) — would become Norm assertion libraries, not archetype schemas; candidate for future sourcing when ITIP builds Norm authoring UX |
 | **25030 — Requirements** | 25030 | Process standard for quality requirements elicitation — already operationalized by GSM's Directive grammar (`modal × verb × qualifier × purpose`); nothing to source as schemas |
@@ -72,7 +72,7 @@ See the [SQuaRE Series — GSM Compatibility Trace](../README.md#square-series--
 ## File Inventory
 
 | Type | Naming | Count | Standards |
-|------|--------|-------|-----------|
+| ------ | -------- | ------- | ----------- |
 | Archetype schemas | `*.schema.json` | 39 | 16 (ISO 25010) + 8 (ISO 25011) + 15 (ISO 25012) |
 | READMEs | `README.md` | 4 | 1 unified + 3 per-standard |
 | **Total** | | **43** | |

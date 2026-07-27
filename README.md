@@ -2,8 +2,6 @@
 
 Sourced governance/compliance/architecture/regulatory framework schemas for the **IT Intelligence Platform (ITIP)**, expressed as GSM-compatible ascription statements (JSON Schema archetypes + Directive/Norm instances).
 
-This repository was extracted from `itip/def/frameworks/` to be distributed and versioned independently of the private `itip` design repository, following the same publication posture as GSM's schema/conformance layer (open vocabulary, governed core stays with the product).
-
 > This repository is in a **design-time** phase. It contains framework model schemas and sourced governance instances — no runnable application code.
 
 ## What's in here
@@ -26,7 +24,7 @@ def/
 ## Sourced Models
 
 | Model | Source Standard | Scope |
-|-------|----------------|-------|
+| ------- | ---------------- | ------- |
 | **TOGAF** | TOGAF Standard, 10th Edition (The Open Group) | Enterprise Architecture — structures, behaviors, governance, ADM |
 | **ISO 25000 (SQuaRE)** | ISO/IEC 25010:2011 + 25011:2017 + 25012:2008 | Quality Models — product, service, and data quality |
 | **NIS2** | Directive (EU) 2022/2555 | EU Cybersecurity — entity classification, risk management, incident reporting, supply chain |
@@ -49,3 +47,12 @@ See [`def/README.md`](def/README.md) for the full inter-model articulation (how 
 ## Provenance note
 
 Schemas are derived vocabulary (structure, property names, governance grammar), not reproductions of the source standards' normative text. See `CONTRIBUTING.md` for the sourcing/provenance contribution rule.
+
+## License
+
+ITIP Frameworks is licensed under the **[Business Source License 1.1](LICENSE)**
+(BUSL-1.1), with the same Additional Use Grant, 2030-07-01 Change Date, and
+AGPL-3.0-or-later Change License as GSM and the other Poesis engine repos. BUSL is a
+source-available license, not an Open Source license — it mirrors GSM's
+pre-publication holding posture until the sourced schema corpus stabilizes.
+
