@@ -55,4 +55,3 @@ ITIP Frameworks is licensed under the **[Business Source License 1.1](LICENSE)**
 AGPL-3.0-or-later Change License as GSM and the other Poesis engine repos. BUSL is a
 source-available license, not an Open Source license — it mirrors GSM's
 pre-publication holding posture until the sourced schema corpus stabilizes.
-
