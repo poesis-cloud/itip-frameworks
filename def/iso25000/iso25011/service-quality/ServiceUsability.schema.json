@@ -1,0 +1,58 @@
+{
+  "$schema": "gsmarc://gsm/Archetype/v1",
+  "$id": "gsmarc://itip/frameworks/iso25000/iso25011/service-quality/ServiceUsability/v1",
+  "title": "ServiceUsability",
+  "description": "ISO 25011 quality archetype — Usability viability dimension. Degree to which the IT service can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use. Sub-characteristics: Appropriateness Recognizability, Learnability, Operability, User Error Protection, Accessibility, Courtesy. Rootless archetype — used as qualifier in Directives/Norms. Source: ISO/IEC TS 25011:2017 §7.2.",
+  "type": "object",
+  "required": [
+    "accessibility"
+  ],
+  "properties": {
+    "learnability": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ],
+      "$gsm:queryable": true,
+      "description": "Degree to which the IT service enables users to learn how to use it. Norm example: ServiceUsability.learnability == 'HIGH'."
+    },
+    "operability": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ],
+      "$gsm:queryable": true,
+      "description": "Degree to which the IT service has attributes that make it easy to operate and control."
+    },
+    "errorProtection": {
+      "type": "boolean",
+      "$gsm:queryable": true,
+      "description": "Whether the IT service protects users against making errors."
+    },
+    "accessibility": {
+      "type": "string",
+      "enum": [
+        "WCAG_A",
+        "WCAG_AA",
+        "WCAG_AAA",
+        "NONE"
+      ],
+      "$gsm:queryable": true,
+      "description": "Accessibility compliance level for the IT service. Norm example: ServiceUsability.accessibility != 'NONE'."
+    },
+    "courtesy": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ],
+      "description": "Degree to which the IT service providers show polite and respectful behavior in their interactions with users. Unique to service quality — not present in product quality (ISO 25010)."
+    }
+  },
+  "additionalProperties": false
+}
