@@ -8,7 +8,7 @@
 
 | Layer | What it produces | File extension |
 |-------|-----------------|----------------|
-| **P8 Layer 2 — Archetype schemas** | IRN-specific vocabulary (capability types, maturity dimensions, measurement criteria) | `.schema.json` |
+| **P8 Layer 2 — Archetype schemas** | IRN-specific vocabulary (capability types, maturity dimensions, measurement criteria) | `.archetype.json` |
 | **P8 Layer 3 — Sourced Directives** | IRN governance mandates (adherence requirements for member organizations) | `*SourcedDirective.json` |
 | **P8 Layer 3 — Sourced Norms** | IRN measurable requirements (capability-level targets, evidence criteria) | `*SourcedNorm.json` |
 

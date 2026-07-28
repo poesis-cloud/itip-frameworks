@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25011/service-quality/ServiceReliability/v1",
   "title": "ServiceReliability",
-  "description": "ISO 25011 quality archetype — IT Service Reliability viability dimension. Degree to which the IT service performs specified functions under specified conditions for a specified period of time. Sub-characteristics: Continuity, IT Service Recoverability, Availability. Rootless archetype — used as qualifier in Directives/Norms governing service reliability and SLA targets. Source: ISO/IEC TS 25011:2017 §7.4.",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25011 quality archetype \u2014 IT Service Reliability viability dimension. Degree to which the IT service performs specified functions under specified conditions for a specified period of time. Sub-characteristics: Continuity, IT Service Recoverability, Availability. Rootless archetype \u2014 used as qualifier in Directives/Norms governing service reliability and SLA targets. Source: ISO/IEC TS 25011:2017 \u00a77.4.",
   "type": "object",
   "required": [
     "availabilityTarget"

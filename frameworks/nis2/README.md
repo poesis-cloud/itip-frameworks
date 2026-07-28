@@ -10,7 +10,7 @@
 
 | Layer | What it produces | File extension |
 | ------- | ----------------- | ---------------- |
-| **P8 Layer 2 — Archetype schemas** | NIS2-specific vocabulary (entity classification, measure categories, reporting stages) | `.schema.json` |
+| **P8 Layer 2 — Archetype schemas** | NIS2-specific vocabulary (entity classification, measure categories, reporting stages) | `.archetype.json` |
 | **P8 Layer 3 — Sourced Directives** | Concrete legal mandates from NIS2 articles, expressed in GSM Directive grammar | `*SourcedDirective.json` |
 | **P8 Layer 3 — Sourced Norms** | Concrete measurable requirements from NIS2 articles, expressed in GSM Norm grammar | `*SourcedNorm.json` |
 
@@ -167,7 +167,7 @@ See `../README.md` for full articulation analysis including:
 
 NIS2 establishes the first **regulatory model sourcing** convention for ITIP:
 
-1. **Vocabulary schemas** (`.schema.json`) define the regulation's domain-specific concepts — entity classification, compliance dimensions, reporting structures. Same conventions as quality/architecture models.
+1. **Vocabulary schemas** (`.archetype.json`) define the regulation's domain-specific concepts — entity classification, compliance dimensions, reporting structures. Same conventions as quality/architecture models.
 
 2. **Sourced Directives** (`*SourcedDirective.json`) encode the regulation's legal mandates in GSM Directive grammar (`$schema: Directive`, `statement: {modal, verb, qualifier, purpose}`). Each file traces to a specific article via `source`.
 

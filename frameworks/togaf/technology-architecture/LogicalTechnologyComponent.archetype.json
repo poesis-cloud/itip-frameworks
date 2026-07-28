@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/technology-architecture/LogicalTechnologyComponent/v1",
-  "$ref": "gsmarc://gsm/Structure/v1",
+  "$ref": "gsmarc://itip/Structure/v1",
   "title": "LogicalTechnologyComponent",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced structural archetype \u2014 logical encapsulation of technology functionality, independent of physical implementation. Parallels the Logical/Physical split in Application Architecture and Data Architecture. An active system with Mechanisms (infrastructure functions), Effectors (infrastructure services), Receptors (configuration, workload signals). Extends Structure with TOGAF Technology Architecture vocabulary. TOGAF mapping: Logical Technology Component (Content Metamodel, Technology Architecture domain). Source framework: TOGAF (Technology Architecture, Content Framework).",
   "type": "object",
   "required": [
@@ -33,6 +37,5 @@
       "$gsm:queryable": true,
       "description": "Layer in the technology architecture reference model. TOGAF mapping: position in the Technology Reference Model (TRM)."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

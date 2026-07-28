@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25012/inherent-and-system-quality/DataCompliance/v1",
   "title": "DataCompliance",
-  "description": "ISO 25012-sourced data quality archetype — Compliance inherent-and-system data quality characteristic. The degree to which data has attributes that adhere to standards, conventions, or regulations in force and similar rules relating to data quality in a specific context of use. Rootless archetype — used as qualifier in Directives/Norms governing data entities. Source: ISO/IEC 25012 (Inherent and System-Dependent Data Quality — Compliance).",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25012-sourced data quality archetype \u2014 Compliance inherent-and-system data quality characteristic. The degree to which data has attributes that adhere to standards, conventions, or regulations in force and similar rules relating to data quality in a specific context of use. Rootless archetype \u2014 used as qualifier in Directives/Norms governing data entities. Source: ISO/IEC 25012 (Inherent and System-Dependent Data Quality \u2014 Compliance).",
   "type": "object",
   "required": [
     "complianceLevel"

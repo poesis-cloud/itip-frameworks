@@ -8,14 +8,14 @@ Crosses the network boundary — analogous to a **syscall** or **FFI call**. The
 
 | File                                  | Role        | Description                                                             |
 | ------------------------------------- | ----------- | ----------------------------------------------------------------------- |
-| `HttpRequest.schema.json`             | Data        | Request payload: `method`, `targetUri`, `contentType`, `accept`, `body` |
-| `HttpResponse.schema.json`            | Data        | Response payload: `statusCode`, `contentType`, `body`                   |
-| `HttpRequestEffector.schema.json`     | Effector    | Port archetype — identity-bound by `method` + `targetUri`               |
-| `HttpRequestReceptor.schema.json`     | Receptor    | Port archetype — identity-bound by `targetUri`                          |
-| `HttpRequestInteraction.schema.json`  | Interaction | Causal link: request Effector → request Receptor                        |
-| `HttpResponseEffector.schema.json`    | Effector    | Port archetype — response emission                                      |
-| `HttpResponseReceptor.schema.json`    | Receptor    | Port archetype — response reception                                     |
-| `HttpResponseInteraction.schema.json` | Interaction | Causal link: response Effector → response Receptor                      |
+| `HttpRequest.archetype.json`             | Data        | Request payload: `method`, `targetUri`, `contentType`, `accept`, `body` |
+| `HttpResponse.archetype.json`            | Data        | Response payload: `statusCode`, `contentType`, `body`                   |
+| `HttpRequestEffector.archetype.json`     | Effector    | Port archetype — identity-bound by `method` + `targetUri`               |
+| `HttpRequestReceptor.archetype.json`     | Receptor    | Port archetype — identity-bound by `targetUri`                          |
+| `HttpRequestInteraction.archetype.json`  | Interaction | Causal link: request Effector → request Receptor                        |
+| `HttpResponseEffector.archetype.json`    | Effector    | Port archetype — response emission                                      |
+| `HttpResponseReceptor.archetype.json`    | Receptor    | Port archetype — response reception                                     |
+| `HttpResponseInteraction.archetype.json` | Interaction | Causal link: response Effector → response Receptor                      |
 
 ## Two Directions
 

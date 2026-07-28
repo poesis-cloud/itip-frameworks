@@ -6,7 +6,7 @@ This document defines the **inter-model articulation** for all sourced models in
 
 Models are composed **through GSM**, not **within schemas**:
 
-- Each model produces pure schemas in its own folder (`def/{model}/`)
+- Each model produces pure schemas in its own folder (`frameworks/{model}/`), inheriting the ITIP base Archetypes in `frameworks/itip/base/` rather than the GSM bases directly
 - Cross-model references happen at the **governance layer**: Directives qualify Subjects using archetypes from different models
 - The GSM Ascription mechanism binds multiple Definition layers onto the same Subject
 
@@ -50,7 +50,7 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 
 ## Model-Native Organization (P9)
 
-Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref`.
+Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref` to the corresponding ITIP base Archetype (`gsmarc://itip/{SubjectType}/v1`).
 
 | TOGAF Taxonomy | NIS2 Taxonomy | ISO 25010 Taxonomy |
 | --------------- | -------------- | ------------------- |
@@ -333,7 +333,7 @@ ISO 25030 defines *how to elicit, define, use, and govern quality requirements*.
 }
 ```
 
-The `qualifier` points to `ServiceReliability.schema.json` (ISO 25011), which defines the property vocabulary (`availabilityTarget`, `continuityLevel`, `recoverabilityTarget`). The Directive declares **governance intent**; the archetype schema declares **what properties exist**; the Norm (below) makes it **measurable**.
+The `qualifier` points to `ServiceReliability.archetype.json` (ISO 25011), which defines the property vocabulary (`availabilityTarget`, `continuityLevel`, `recoverabilityTarget`). The Directive declares **governance intent**; the archetype schema declares **what properties exist**; the Norm (below) makes it **measurable**.
 
 ### Norm syntax ↔ ISO 25040 (Quality Evaluation) + 2502n (Measures)
 
@@ -382,7 +382,7 @@ ISO 25040 defines the **Quality Rating Module (QRM)** as its central evaluation 
 
 **What it provides**: Process guidance for eliciting, defining, and governing quality requirements.
 
-**GSM mapping**: 25030 is *already operationalized* by the Directive grammar. GSM Directives ARE the quality requirement format that 25030 describes in prose. There is nothing to source as schemas — the entire standard is embodied in `Directive.schema.json`.
+**GSM mapping**: 25030 is *already operationalized* by the Directive grammar. GSM Directives ARE the quality requirement format that 25030 describes in prose. There is nothing to source as schemas — the entire standard is embodied in `Directive.archetype.json`.
 
 **Integration shape**: Architectural influence on ITIP's Directive authoring workflow — derivation chains (QIU → product → service → data) and deployment chains (system → subsystem → component) could inform ITIP's UX for Directive creation.
 

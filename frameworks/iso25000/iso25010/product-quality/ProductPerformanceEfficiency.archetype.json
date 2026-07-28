@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25010/product-quality/ProductPerformanceEfficiency/v1",
   "title": "ProductPerformanceEfficiency",
-  "description": "TOGAF-sourced quality archetype — Performance viability dimension. Defines the property vocabulary for performance governance: latency percentiles, throughput, error rates. Rootless archetype — used as qualifier in Directives/Norms and as data type for Effectors/Receptors carrying performance state. Source framework: TOGAF (Non-Functional Requirements) + ISO/IEC 25010 (Performance Efficiency sub-characteristic).",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced quality archetype \u2014 Performance viability dimension. Defines the property vocabulary for performance governance: latency percentiles, throughput, error rates. Rootless archetype \u2014 used as qualifier in Directives/Norms and as data type for Effectors/Receptors carrying performance state. Source framework: TOGAF (Non-Functional Requirements) + ISO/IEC 25010 (Performance Efficiency sub-characteristic).",
   "type": "object",
   "required": [
     "p99LatencyMs"

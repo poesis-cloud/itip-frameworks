@@ -30,8 +30,8 @@ SCAP organizes itself into component specifications. Each sourced component gets
 
 | Model Concept | GSM Subject Type | Domain Folder | Schema File | Notes |
 | --------------- | ----------------- | --------------- | ------------- | ------- |
-| Platform Identifier | rootless | cpe | `ScapPlatformIdentifier.schema.json` | Decomposes CPE 2.3 WFN attributes into typed properties. Cross-cutting: ascribable to any technology-typed subject. |
-| Configuration Setting | rootless | cce | `ScapConfigurationSetting.schema.json` | Uniquely identifies configuration guidance statements. Links to platform via CPE URI. |
+| Platform Identifier | rootless | cpe | `ScapPlatformIdentifier.archetype.json` | Decomposes CPE 2.3 WFN attributes into typed properties. Cross-cutting: ascribable to any technology-typed subject. |
+| Configuration Setting | rootless | cce | `ScapConfigurationSetting.archetype.json` | Uniquely identifies configuration guidance statements. Links to platform via CPE URI. |
 
 ## Excluded Concepts (with reason)
 

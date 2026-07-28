@@ -27,9 +27,9 @@ This repo has no execution architecture of its own. It is a **content source** r
 
 | Area | Path | Contents |
 | ------ | ------ | ---------- |
-| Inter-model composition | `def/README.md` | Composition principle, dynamic/static paradigm, articulation maps |
-| ITIP domain archetypes | `def/itip/` | SourcedDirective, SourcedNorm, meta-governance mechanisms |
-| Sourced frameworks | `def/{authority}/` | One folder per authority (togaf, iso25000, gdpr, nis2, scap, http, ...) |
+| Inter-model composition | `frameworks/README.md` | Composition principle, dynamic/static paradigm, articulation maps |
+| ITIP domain archetypes | `frameworks/itip/` | SourcedDirective, SourcedNorm, meta-governance mechanisms |
+| Sourced frameworks | `frameworks/{authority}/` | One folder per authority (togaf, iso25000, gdpr, nis2, scap, http, ...) |
 
 ## 6. Team Roles
 
@@ -71,5 +71,5 @@ This repo is content-only (no dev/QA sprint cycle in the application sense). Mai
 
 ```bash
 # Validate a single schema is well-formed JSON
-python -m json.tool def/togaf/governance/Driver.schema.json
+python -m json.tool frameworks/togaf/governance/Driver.schema.json
 ```

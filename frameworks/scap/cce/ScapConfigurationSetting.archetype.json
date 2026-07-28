@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/scap/cce/ScapConfigurationSetting/v1",
   "title": "ScapConfigurationSetting",
-  "description": "SCAP-sourced archetype — configuration setting identification per Common Configuration Enumeration (CCE). Each CCE entry uniquely identifies a configuration guidance statement, enabling correlation of security configuration guidance across multiple sources (CIS Benchmarks, DISA STIGs, NIST 800-53). Rootless — cross-cutting identification dimension applicable to any configurable subject. Source: NIST CCE List, NIST SP 800-126 r3 (SCAP 1.3).",
+  "framework": {
+    "name": "scap",
+    "version": "1.0.0"
+  },
+  "description": "SCAP-sourced archetype \u2014 configuration setting identification per Common Configuration Enumeration (CCE). Each CCE entry uniquely identifies a configuration guidance statement, enabling correlation of security configuration guidance across multiple sources (CIS Benchmarks, DISA STIGs, NIST 800-53). Rootless \u2014 cross-cutting identification dimension applicable to any configurable subject. Source: NIST CCE List, NIST SP 800-126 r3 (SCAP 1.3).",
   "type": "object",
   "required": [
     "cceId",

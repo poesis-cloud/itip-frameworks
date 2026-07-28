@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "title": "GdprTransparencyObligation",
-  "description": "GDPR-sourced archetype — transparency and information obligations under Regulation (EU) 2016/679. Articles 12-14 require controllers to provide information about processing in a concise, transparent, intelligible, and easily accessible form. Rootless — regulatory compliance dimension. Source: GDPR Articles 12, 13, 14.",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 transparency and information obligations under Regulation (EU) 2016/679. Articles 12-14 require controllers to provide information about processing in a concise, transparent, intelligible, and easily accessible form. Rootless \u2014 regulatory compliance dimension. Source: GDPR Articles 12, 13, 14.",
   "type": "object",
   "required": [
     "informationProvided"
@@ -40,7 +44,7 @@
     },
     "dataSourceDisclosed": {
       "type": "boolean",
-      "description": "Whether the source of personal data has been disclosed when data was not obtained directly from the data subject. Source: GDPR Art 14(2)(f). Set to true when data collected directly from the data subject (Art 13 — not applicable)."
+      "description": "Whether the source of personal data has been disclosed when data was not obtained directly from the data subject. Source: GDPR Art 14(2)(f). Set to true when data collected directly from the data subject (Art 13 \u2014 not applicable)."
     },
     "recipientsNotified": {
       "type": "boolean",

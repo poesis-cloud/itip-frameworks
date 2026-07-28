@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprDataProtectionByDesign/v1",
   "title": "GdprDataProtectionByDesign",
-  "description": "GDPR-sourced archetype — data protection by design and by default under Regulation (EU) 2016/679. Article 25 requires controllers to implement appropriate technical and organisational measures at the time of determination of means and at the time of processing itself. Rootless — regulatory compliance dimension. Source: GDPR Article 25(1)-(2).",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 data protection by design and by default under Regulation (EU) 2016/679. Article 25 requires controllers to implement appropriate technical and organisational measures at the time of determination of means and at the time of processing itself. Rootless \u2014 regulatory compliance dimension. Source: GDPR Article 25(1)-(2).",
   "type": "object",
   "required": [
     "technicalMeasuresImplemented"

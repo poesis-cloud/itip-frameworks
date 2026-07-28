@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25012/inherent-and-system-quality/DataConfidentiality/v1",
   "title": "DataConfidentiality",
-  "description": "ISO 25012-sourced data quality archetype — Confidentiality inherent-and-system data quality characteristic. The degree to which data has attributes that ensure it is only accessible and interpretable by authorized users in a specific context of use. Rootless archetype — used as qualifier in Directives/Norms governing data entities. Source: ISO/IEC 25012 (Inherent and System-Dependent Data Quality — Confidentiality).",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25012-sourced data quality archetype \u2014 Confidentiality inherent-and-system data quality characteristic. The degree to which data has attributes that ensure it is only accessible and interpretable by authorized users in a specific context of use. Rootless archetype \u2014 used as qualifier in Directives/Norms governing data entities. Source: ISO/IEC 25012 (Inherent and System-Dependent Data Quality \u2014 Confidentiality).",
   "type": "object",
   "required": [
     "confidentialityClassification"

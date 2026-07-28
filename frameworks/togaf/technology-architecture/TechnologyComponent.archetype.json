@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/technology-architecture/TechnologyComponent/v1",
-  "$ref": "gsmarc://gsm/Structure/v1",
+  "$ref": "gsmarc://itip/Structure/v1",
   "title": "TechnologyComponent",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced structural archetype \u2014 physical technology building block (hardware, firmware, software infrastructure). An active system with Mechanisms (processing, routing, storage functions), Effectors (signals, data output), Receptors (signals, data input). Extends Structure with TOGAF Technology Architecture vocabulary. TOGAF mapping: Technology Component (Content Metamodel, Technology Architecture domain). Source framework: TOGAF (Technology Architecture, Content Framework).",
   "type": "object",
   "required": [
@@ -27,6 +31,5 @@
       "$gsm:queryable": true,
       "description": "Operating system or firmware (e.g., 'linux', 'windows-server', 'ios'). TOGAF mapping: Technology Component OS."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

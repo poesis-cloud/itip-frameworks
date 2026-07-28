@@ -1,4 +1,8 @@
 {
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
   "source": {
     "authority": "European Parliament and Council of the European Union",
     "regulation": "Regulation (EU) 2016/679 (GDPR)",
@@ -15,5 +19,5 @@
   "verb": "ENSURE",
   "qualifier": "gsmarc://itip/frameworks/gdpr/breach-notification/GdprDataBreach/v1",
   "purpose": "$gdpr:personal-data-processing",
-  "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope — breach communication governs the processing system's incident response capabilities. Mandates breach communication to data subjects when risk is HIGH. Art 34(3) provides three exemptions (encryption, subsequent measures, disproportionate effort). Operationalized by Norms checking data subject notification when risk is HIGH."
+  "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope \u2014 breach communication governs the processing system's incident response capabilities. Mandates breach communication to data subjects when risk is HIGH. Art 34(3) provides three exemptions (encryption, subsequent measures, disproportionate effort). Operationalized by Norms checking data subject notification when risk is HIGH."
 }

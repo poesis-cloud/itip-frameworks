@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/AppraisalMeasure/v1",
   "title": "AppraisalMeasure",
-  "description": "ITIP data archetype — quantitative governance measure for dashboard indicators. Rootless (no GSM base extension). Types the effect payload emitted by appraisal Mechanisms for every rule evaluation, regardless of whether a threshold was breached. Each measure provides the raw indicator value, its unit, optional component breakdown, and optional entity-level details. Stored by the BFF for trend computation and dashboard rendering. Source: ITIP (domain archetype for governance appraisal).",
+  "framework": {
+    "name": "itip",
+    "version": "1.0.0"
+  },
+  "description": "ITIP data archetype \u2014 quantitative governance measure for dashboard indicators. Rootless (no GSM base extension). Types the effect payload emitted by appraisal Mechanisms for every rule evaluation, regardless of whether a threshold was breached. Each measure provides the raw indicator value, its unit, optional component breakdown, and optional entity-level details. Stored by the BFF for trend computation and dashboard rendering. Source: ITIP (domain archetype for governance appraisal).",
   "type": "object",
   "required": [
     "ruleType",
@@ -40,7 +44,7 @@
     },
     "value": {
       "type": "number",
-      "description": "The indicator value. Semantics depend on unit: 0–100 for percentages/ratios, raw integer for counts, elapsed days for durations."
+      "description": "The indicator value. Semantics depend on unit: 0\u2013100 for percentages/ratios, raw integer for counts, elapsed days for durations."
     },
     "unit": {
       "type": "string",
@@ -50,16 +54,16 @@
         "days",
         "ratio"
       ],
-      "description": "Unit of the value. percent = 0–100 integer percentage. count = absolute integer count. days = elapsed time in days. ratio = 0–100 integer ratio (numerator * 100 // denominator)."
+      "description": "Unit of the value. percent = 0\u2013100 integer percentage. count = absolute integer count. days = elapsed time in days. ratio = 0\u2013100 integer ratio (numerator * 100 // denominator)."
     },
     "components": {
       "type": "object",
-      "description": "Optional breakdown of the value into constituent parts — e.g. {numerator, denominator} for ratios, {compatible, conflicting, total} for compatibility checks.",
+      "description": "Optional breakdown of the value into constituent parts \u2014 e.g. {numerator, denominator} for ratios, {compatible, conflicting, total} for compatibility checks.",
       "additionalProperties": true
     },
     "details": {
       "type": "array",
-      "description": "Optional entity-level breakdown — e.g. per-Norm evaluation results, per-Directive conflict pairs, per-property coverage status. Structure varies by rule type.",
+      "description": "Optional entity-level breakdown \u2014 e.g. per-Norm evaluation results, per-Directive conflict pairs, per-property coverage status. Structure varies by rule type.",
       "items": {
         "type": "object"
       },

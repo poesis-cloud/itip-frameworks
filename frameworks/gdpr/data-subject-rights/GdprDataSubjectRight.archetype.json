@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprDataSubjectRight/v1",
   "title": "GdprDataSubjectRight",
-  "description": "GDPR-sourced archetype — data subject rights under Regulation (EU) 2016/679. Articles 15-22 define individual rights that data subjects can exercise against controllers. Each right has specific conditions, exemptions, and response obligations. Rootless — regulatory compliance dimension. Source: GDPR Articles 15-22.",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 data subject rights under Regulation (EU) 2016/679. Articles 15-22 define individual rights that data subjects can exercise against controllers. Each right has specific conditions, exemptions, and response obligations. Rootless \u2014 regulatory compliance dimension. Source: GDPR Articles 15-22.",
   "type": "object",
   "required": [
     "rightType"

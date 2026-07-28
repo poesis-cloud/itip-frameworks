@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$ref": "gsmarc://gsm/Effector/v1",
+  "$ref": "gsmarc://itip/Effector/v1",
   "$id": "gsmarc://itip/frameworks/http/HttpRequestEffector/v1",
   "title": "HttpRequestEffector",
+  "framework": {
+    "name": "http",
+    "version": "1.0.0"
+  },
   "description": "Effector archetype for HTTP request emission. Typed by method (operation verb) and uriTemplate (request target). Source: RFC 9110 (HTTP Semantics, 2022).",
   "type": "object",
   "required": [
@@ -21,7 +25,7 @@
         "DELETE",
         "OPTIONS"
       ],
-      "description": "HTTP request method discriminating the operation verb. GET retrieves a representation (RFC 9110 §9.3.1). HEAD retrieves headers only (§9.3.2). POST processes the enclosed representation per resource-specific semantics (§9.3.3). PUT creates or replaces the target resource state (§9.3.4). PATCH partially modifies the target resource (RFC 5789). DELETE removes the target resource (RFC 9110 §9.3.5). OPTIONS describes communication options (§9.3.7). Identity-bound: effectors of the same Definition always carry the same method.",
+      "description": "HTTP request method discriminating the operation verb. GET retrieves a representation (RFC 9110 \u00a79.3.1). HEAD retrieves headers only (\u00a79.3.2). POST processes the enclosed representation per resource-specific semantics (\u00a79.3.3). PUT creates or replaces the target resource state (\u00a79.3.4). PATCH partially modifies the target resource (RFC 5789). DELETE removes the target resource (RFC 9110 \u00a79.3.5). OPTIONS describes communication options (\u00a79.3.7). Identity-bound: effectors of the same Definition always carry the same method.",
       "$gsm:identityBound": true,
       "$gsm:queryable": true
     },
@@ -29,10 +33,9 @@
       "type": "string",
       "format": "uri-template",
       "minLength": 1,
-      "description": "URI template identifying the target resource this effector addresses (e.g., '/api/users/{id}'). Identity-bound: effectors of the same Definition always target the same URI pattern. Source: RFC 6570 (URI Template, 2012); RFC 9110 §7.1 — Determining the Target Resource.",
+      "description": "URI template identifying the target resource this effector addresses (e.g., '/api/users/{id}'). Identity-bound: effectors of the same Definition always target the same URI pattern. Source: RFC 6570 (URI Template, 2012); RFC 9110 \u00a77.1 \u2014 Determining the Target Resource.",
       "$gsm:identityBound": true,
       "$gsm:queryable": true
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/technology-architecture/PlatformService/v1",
-  "$ref": "gsmarc://gsm/Structure/v1",
+  "$ref": "gsmarc://itip/Structure/v1",
   "title": "PlatformService",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced structural archetype \u2014 foundational technology capability on which application components are deployed and operated. Extends Structure with TOGAF Technology Architecture vocabulary. TOGAF mapping: Platform Service (Content Metamodel, Technology Architecture domain). Source framework: TOGAF (Technology Architecture, Content Framework).",
   "type": "object",
   "required": [
@@ -28,6 +32,5 @@
       "$gsm:queryable": true,
       "description": "Platform provider (e.g., 'azure-aks', 'aws-eks', 'gcp-gke', 'on-premise-k8s'). Enables platform-level governance and vendor-lock-in analysis."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

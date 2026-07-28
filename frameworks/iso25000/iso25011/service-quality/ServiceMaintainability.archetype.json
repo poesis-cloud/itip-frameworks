@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25011/service-quality/ServiceMaintainability/v1",
   "title": "ServiceMaintainability",
-  "description": "ISO 25011 quality archetype — IT Service Maintainability viability dimension. Degree to which the IT service can be effectively and efficiently modified by the service provider. Sub-characteristics: Analysability, Modifiability, Testability. Rootless archetype — complements ProductMaintainability (ISO 25010) with service-level maintenance semantics. Source: ISO/IEC TS 25011:2017 §7.8.",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25011 quality archetype \u2014 IT Service Maintainability viability dimension. Degree to which the IT service can be effectively and efficiently modified by the service provider. Sub-characteristics: Analysability, Modifiability, Testability. Rootless archetype \u2014 complements ProductMaintainability (ISO 25010) with service-level maintenance semantics. Source: ISO/IEC TS 25011:2017 \u00a77.8.",
   "type": "object",
   "required": [
     "testability"

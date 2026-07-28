@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprDataProtectionOfficer/v1",
   "title": "GdprDataProtectionOfficer",
-  "description": "GDPR-sourced archetype — data protection officer designation and properties under Regulation (EU) 2016/679. Articles 37-39 define when a DPO must be designated, required qualifications, independence guarantees, and tasks. Rootless — regulatory compliance dimension. Source: GDPR Articles 37, 38, 39.",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 data protection officer designation and properties under Regulation (EU) 2016/679. Articles 37-39 define when a DPO must be designated, required qualifications, independence guarantees, and tasks. Rootless \u2014 regulatory compliance dimension. Source: GDPR Articles 37, 38, 39.",
   "type": "object",
   "required": [
     "dpoRequired"
@@ -26,7 +30,7 @@
     "dpoIndependent": {
       "type": "boolean",
       "$gsm:queryable": true,
-      "description": "Whether the DPO operates independently — does not receive instructions regarding the exercise of tasks, is not dismissed or penalised for performing tasks, and reports directly to highest management level. Source: GDPR Art 38(3)."
+      "description": "Whether the DPO operates independently \u2014 does not receive instructions regarding the exercise of tasks, is not dismissed or penalised for performing tasks, and reports directly to highest management level. Source: GDPR Art 38(3)."
     },
     "dpoContactPublished": {
       "type": "boolean",

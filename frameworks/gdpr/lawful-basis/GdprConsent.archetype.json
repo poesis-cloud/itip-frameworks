@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprConsent/v1",
   "title": "GdprConsent",
-  "description": "GDPR-sourced archetype — conditions for valid consent under Regulation (EU) 2016/679. When processing relies on consent as lawful basis, consent must be freely given, specific, informed, unambiguous, demonstrable, and withdrawable. Rootless — regulatory compliance dimension. Source: GDPR Article 7, Article 8 (child's consent), Recitals 32, 42, 43.",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 conditions for valid consent under Regulation (EU) 2016/679. When processing relies on consent as lawful basis, consent must be freely given, specific, informed, unambiguous, demonstrable, and withdrawable. Rootless \u2014 regulatory compliance dimension. Source: GDPR Article 7, Article 8 (child's consent), Recitals 32, 42, 43.",
   "type": "object",
   "required": [
     "consentDemonstrable"
@@ -16,7 +20,7 @@
     "freelyGiven": {
       "type": "boolean",
       "$gsm:queryable": true,
-      "description": "Whether consent was freely given — not conditional on performance of a contract or provision of a service that does not require the consented processing. Source: GDPR Art 7(4), Recital 43."
+      "description": "Whether consent was freely given \u2014 not conditional on performance of a contract or provision of a service that does not require the consented processing. Source: GDPR Art 7(4), Recital 43."
     },
     "specificPurpose": {
       "type": "boolean",
@@ -28,7 +32,7 @@
     },
     "unambiguousIndication": {
       "type": "boolean",
-      "description": "Whether consent was given by a clear affirmative act — not by silence, pre-ticked boxes, or inactivity. Source: GDPR Recital 32."
+      "description": "Whether consent was given by a clear affirmative act \u2014 not by silence, pre-ticked boxes, or inactivity. Source: GDPR Recital 32."
     },
     "consentDistinguishable": {
       "type": "boolean",

@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/application-architecture/ApplicationInterface/v1",
-  "$ref": "gsmarc://gsm/Effector/v1",
+  "$ref": "gsmarc://itip/Effector/v1",
   "title": "ApplicationInterface",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced effector archetype \u2014 the access point where application services are made available to consumers. An output port of an Application Component or Application Service through which functionality is exposed. Requires GSM unsealing of Effector to be functional as an Effector extension. Extends Effector with TOGAF Application Architecture vocabulary. TOGAF mapping: Application Interface (Content Metamodel, Application Architecture domain). Source framework: TOGAF (Application Architecture, Content Framework).",
   "type": "object",
   "required": [
@@ -38,6 +42,5 @@
       "$gsm:queryable": true,
       "description": "Whether authentication is required to access this interface. TOGAF mapping: Application Interface security constraint."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/gdpr/breach-notification/GdprDataBreach/v1",
   "title": "GdprDataBreach",
-  "description": "GDPR-sourced archetype — personal data breach notification under Regulation (EU) 2016/679. Articles 33-34 define the obligation to notify the supervisory authority and, in high-risk cases, the data subjects. Rootless — regulatory compliance dimension. Source: GDPR Articles 33, 34.",
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
+  "description": "GDPR-sourced archetype \u2014 personal data breach notification under Regulation (EU) 2016/679. Articles 33-34 define the obligation to notify the supervisory authority and, in high-risk cases, the data subjects. Rootless \u2014 regulatory compliance dimension. Source: GDPR Articles 33, 34.",
   "type": "object",
   "required": [
     "personalDataBreach"
@@ -11,7 +15,7 @@
     "personalDataBreach": {
       "type": "boolean",
       "$gsm:queryable": true,
-      "description": "Whether a personal data breach has occurred — a breach of security leading to accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data. Source: GDPR Art 4(12)."
+      "description": "Whether a personal data breach has occurred \u2014 a breach of security leading to accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data. Source: GDPR Art 4(12)."
     },
     "breachType": {
       "type": "string",

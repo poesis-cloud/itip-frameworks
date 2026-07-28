@@ -1,0 +1,385 @@
+{
+  "name": "gdpr",
+  "version": "1.0.0",
+  "description": "GDPR-sourced vocabulary and governance statements \u2014 principles, lawful basis, data subject rights, controller/processor duties, transfers, breach notification, and impact assessment.",
+  "itipVersion": "1.0.0",
+  "elements": [
+    {
+      "path": "breach-notification/AuthorityNotification72h.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "breach-notification/BreachDocumented.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "breach-notification/BreachNotificationAuthority.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "breach-notification/BreachNotificationSubject.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "breach-notification/GdprDataBreach.archetype.json"
+    },
+    {
+      "path": "breach-notification/NotificationContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "breach-notification/SubjectNotificationHighRisk.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/ArrangementDocumented.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/ContractContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DataProtectionByDesign.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/DefaultMinimalProcessing.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DesignMeasuresImplemented.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DpoContactPublished.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DpoDesignated.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DpoDesignation.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/DpoIndependence.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DpoQualified.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/DpoResourcesProvided.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/EffectivenessRegularlyTested.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/GdprControllerProcessorRole.archetype.json"
+    },
+    {
+      "path": "controller-processor/GdprDataProtectionByDesign.archetype.json"
+    },
+    {
+      "path": "controller-processor/GdprDataProtectionOfficer.archetype.json"
+    },
+    {
+      "path": "controller-processor/GdprProcessingActivity.archetype.json"
+    },
+    {
+      "path": "controller-processor/GdprProcessorAgreement.archetype.json"
+    },
+    {
+      "path": "controller-processor/GdprSecurityMeasure.archetype.json"
+    },
+    {
+      "path": "controller-processor/JointControllers.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/PersonnelAuthorized.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/ProcessorInstructionsBound.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/ProcessorObligations.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/RecordContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/RecordsMaintained.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/RecordsOfProcessing.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/SecurityMeasuresImplemented.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "controller-processor/SecurityOfProcessing.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "controller-processor/SubProcessorAuthorized.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/AccessProvided.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/AutomatedDecisionMaking.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/DirectCollectionContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/ErasureCompleted.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/GdprDataSubjectRight.archetype.json"
+    },
+    {
+      "path": "data-subject-rights/GdprTransparencyObligation.archetype.json"
+    },
+    {
+      "path": "data-subject-rights/HumanIntervention.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/IndirectCollectionContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/InformationDirectCollection.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/InformationIndirectCollection.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/InformationProvidedAtCollection.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/InformationProvidedWithinPeriod.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/NotificationObligation.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/ObjectionHandled.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/PortabilityDirectTransfer.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/PortabilityStructuredFormat.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/RecipientsNotified.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/RectificationCompleted.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/RequestFree.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/ResponseTimeliness.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/RestrictionApplied.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "data-subject-rights/RightOfAccess.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/RightToErasure.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/RightToObject.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/RightToPortability.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/RightToRectification.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/RightToRestriction.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "data-subject-rights/TransparentCommunication.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "impact-assessment/Dpia.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "impact-assessment/DpiaConducted.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "impact-assessment/DpiaContentsComplete.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "impact-assessment/GdprImpactAssessment.archetype.json"
+    },
+    {
+      "path": "impact-assessment/PriorConsultation.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/ChildConsent.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "lawful-basis/ConsentDemonstrable.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/ConsentDistinguishable.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/ConsentFreelyGiven.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/ConsentRequirements.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "lawful-basis/ConsentWithdrawable.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/GdprConsent.archetype.json"
+    },
+    {
+      "path": "lawful-basis/GdprLawfulBasis.archetype.json"
+    },
+    {
+      "path": "lawful-basis/GdprSpecialCategoryData.archetype.json"
+    },
+    {
+      "path": "lawful-basis/LawfulBasisDocumented.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/LawfulProcessing.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "lawful-basis/ParentalConsentVerified.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/SpecialCategoryProhibition.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "lawful-basis/SpecialCategoryRestriction.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "principles/Accountability.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/Accuracy.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/DataMinimisation.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/GdprProcessingPrinciple.archetype.json"
+    },
+    {
+      "path": "principles/IntegrityConfidentiality.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/LawfulnessFairnessTransparency.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/ProcessingPrinciples.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "principles/PurposeLimitation.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "principles/StorageLimitation.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "transfers/AdequacyDecision.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "transfers/AppropriateSafeguards.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "transfers/DerogationConditionMet.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "transfers/GdprTransferMechanism.archetype.json"
+    },
+    {
+      "path": "transfers/TransferImpactAssessed.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "transfers/TransferRestriction.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "transfers/TransferSafeguardInPlace.norm.json",
+      "archetype": "SourcedNorm"
+    }
+  ]
+}

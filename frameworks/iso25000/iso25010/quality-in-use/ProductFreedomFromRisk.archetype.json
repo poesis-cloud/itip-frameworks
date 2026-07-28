@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25010/quality-in-use/ProductFreedomFromRisk/v1",
   "title": "ProductFreedomFromRisk",
-  "description": "ISO 25010-sourced quality archetype — Freedom from Risk quality-in-use characteristic. Measures the degree to which a product mitigates potential risk to economic status, human life, health, or the environment. Sub-characteristics: Economic risk mitigation, Health and safety risk mitigation, Environmental risk mitigation. Rootless archetype — used as qualifier in Directives/Norms. Source: ISO/IEC 25010 (Quality in Use — Freedom from Risk).",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25010-sourced quality archetype \u2014 Freedom from Risk quality-in-use characteristic. Measures the degree to which a product mitigates potential risk to economic status, human life, health, or the environment. Sub-characteristics: Economic risk mitigation, Health and safety risk mitigation, Environmental risk mitigation. Rootless archetype \u2014 used as qualifier in Directives/Norms. Source: ISO/IEC 25010 (Quality in Use \u2014 Freedom from Risk).",
   "type": "object",
   "required": [
     "economicRiskMitigation"

@@ -1,4 +1,8 @@
 {
+  "framework": {
+    "name": "nis2",
+    "version": "1.0.0"
+  },
   "source": {
     "authority": "European Parliament and Council of the European Union",
     "regulation": "Directive (EU) 2022/2555 (NIS2)",
@@ -8,7 +12,7 @@
     ],
     "text": "Upon the request of the CSIRT or, where applicable, the competent authority, an intermediate report on relevant status updates."
   },
-  "operationalizes": "gsmarc://itip/frameworks/nis2/incident-reporting/IncidentReportingSourcedDirective/v1",
+  "operationalizes": "gsmarc://itip/frameworks/nis2/incident-reporting/IncidentReporting/v1",
   "qualifier": "gsmarc://itip/frameworks/nis2/incident-reporting/Nis2IncidentReporting/v1",
   "applicability": "Nis2EntityClassification.entityTier in ['ESSENTIAL', 'IMPORTANT'] && Nis2IncidentReporting.significantIncident == true && Nis2IncidentReporting.reportingStage == 'INTERMEDIATE_REPORT'",
   "assertion": "deadlineHours <= 720",

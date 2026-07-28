@@ -1,0 +1,126 @@
+{
+  "name": "nis2",
+  "version": "1.0.0",
+  "description": "NIS2-sourced vocabulary and governance statements \u2014 entity classification, risk management, incident reporting, and supply-chain security.",
+  "itipVersion": "1.0.0",
+  "elements": [
+    {
+      "path": "entity-classification/Nis2EntityClassification.archetype.json"
+    },
+    {
+      "path": "entity-classification/Nis2SectorScope.archetype.json"
+    },
+    {
+      "path": "incident-reporting/EarlyWarning24h.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "incident-reporting/FinalReport1m.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "incident-reporting/IncidentReporting.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "incident-reporting/IntermediateReport.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "incident-reporting/Nis2IncidentReporting.archetype.json"
+    },
+    {
+      "path": "incident-reporting/Notification72h.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/BusinessContinuity.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/Cryptography.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/CyberHygiene.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/EffectivenessAssessment.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/EmployeeTraining.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/GovernanceAccountability.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "risk-management/HumanResources.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/IncidentHandling.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/ManagementApproval.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/ManagementTraining.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/MultiFactorAuth.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/NetworkSecurity.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/Nis2GovernanceAccountability.archetype.json"
+    },
+    {
+      "path": "risk-management/Nis2RiskManagementMeasure.archetype.json"
+    },
+    {
+      "path": "risk-management/RiskAnalysisPolicy.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "risk-management/RiskManagement.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "risk-management/SupplyChainSecurity.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "supply-chain/Nis2SupplyChainSecurity.archetype.json"
+    },
+    {
+      "path": "supply-chain/SecureDevVerification.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "supply-chain/SupplierAssessment.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "supply-chain/SupplierSecurityPosture.norm.json",
+      "archetype": "SourcedNorm"
+    },
+    {
+      "path": "supply-chain/SupplyChainSecurity.directive.json",
+      "archetype": "SourcedDirective"
+    },
+    {
+      "path": "supply-chain/VulnerabilityDisclosure.norm.json",
+      "archetype": "SourcedNorm"
+    }
+  ]
+}

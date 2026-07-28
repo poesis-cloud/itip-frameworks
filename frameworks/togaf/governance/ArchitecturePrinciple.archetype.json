@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/governance/ArchitecturePrinciple/v1",
-  "$ref": "gsmarc://gsm/Directive/v1",
+  "$ref": "gsmarc://itip/Directive/v1",
   "title": "ArchitecturePrinciple",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced directive archetype \u2014 a qualitative statement of intent that guides architecture decisions. Enriches Directive with rationale and implications links. The base Directive already carries governance grammar (modal, verb, qualifier, purpose); Principle adds TOGAF-specific justification vocabulary. Requires GSM unsealing of Directive to be functional. Extends Directive with TOGAF Architecture Principles vocabulary. TOGAF mapping: Architecture Principle (Preliminary Phase, Architecture Principles). Source framework: TOGAF (Architecture Principles).",
   "type": "object",
   "required": [
@@ -33,6 +37,5 @@
       "$gsm:queryable": true,
       "description": "Principle applicability scope. TOGAF mapping: Architecture Principle governance scope."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

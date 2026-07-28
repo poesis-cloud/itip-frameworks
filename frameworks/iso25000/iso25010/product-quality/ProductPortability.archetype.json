@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25010/product-quality/ProductPortability/v1",
   "title": "ProductPortability",
-  "description": "TOGAF-sourced quality archetype — Portability viability dimension. Defines the property vocabulary for portability governance: containerization, cloud-provider agnosticism, configuration externalization, and vendor lock-in assessment. Rootless archetype — used as qualifier in Directives/Norms and as data type for Effectors/Receptors carrying portability posture state. Source framework: TOGAF (Technology Architecture — migration planning, platform independence) + ISO/IEC 25010 (Portability — Adaptability, Installability, Replaceability). Coherence note: fills a gap identified in the TOGAF coherence audit — ISO 25010 Portability is a core quality characteristic relevant to cloud migration governance.",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced quality archetype \u2014 Portability viability dimension. Defines the property vocabulary for portability governance: containerization, cloud-provider agnosticism, configuration externalization, and vendor lock-in assessment. Rootless archetype \u2014 used as qualifier in Directives/Norms and as data type for Effectors/Receptors carrying portability posture state. Source framework: TOGAF (Technology Architecture \u2014 migration planning, platform independence) + ISO/IEC 25010 (Portability \u2014 Adaptability, Installability, Replaceability). Coherence note: fills a gap identified in the TOGAF coherence audit \u2014 ISO 25010 Portability is a core quality characteristic relevant to cloud migration governance.",
   "type": "object",
   "required": [
     "containerized"

@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/governance/Viewpoint/v1",
   "title": "Viewpoint",
-  "description": "TOGAF-sourced justification archetype — Architecture Viewpoint. Defines the property vocabulary for architecture viewpoints that frame how architecture content is presented to stakeholders and what concerns each view addresses. Rootless archetype — used to type viewpoint records in governance justification. TOGAF mapping: Viewpoint (Architecture Content Framework — a specification of the conventions for constructing and using an Architecture View; ISO/IEC/IEEE 42010). Source framework: TOGAF (Architecture Content Framework, Views and Viewpoints).",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced justification archetype \u2014 Architecture Viewpoint. Defines the property vocabulary for architecture viewpoints that frame how architecture content is presented to stakeholders and what concerns each view addresses. Rootless archetype \u2014 used to type viewpoint records in governance justification. TOGAF mapping: Viewpoint (Architecture Content Framework \u2014 a specification of the conventions for constructing and using an Architecture View; ISO/IEC/IEEE 42010). Source framework: TOGAF (Architecture Content Framework, Views and Viewpoints).",
   "type": "object",
   "required": [
     "audience"

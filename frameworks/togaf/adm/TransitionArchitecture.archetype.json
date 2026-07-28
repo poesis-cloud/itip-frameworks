@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/adm/TransitionArchitecture/v1",
   "title": "TransitionArchitecture",
-  "description": "TOGAF-sourced archetype — a formally defined intermediate architecture state between the Baseline Architecture and the Target Architecture. Represents a planned waypoint in the architecture evolution roadmap. Placed in unclassified/ for GSM placement deliberation: may be a directive (target state specification), a governance record, or a state-plane snapshot definition. TOGAF mapping: Transition Architecture (ADM Phase E/F, Migration Planning). Source framework: TOGAF (ADM, Migration Planning).",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced archetype \u2014 a formally defined intermediate architecture state between the Baseline Architecture and the Target Architecture. Represents a planned waypoint in the architecture evolution roadmap. Placed in unclassified/ for GSM placement deliberation: may be a directive (target state specification), a governance record, or a state-plane snapshot definition. TOGAF mapping: Transition Architecture (ADM Phase E/F, Migration Planning). Source framework: TOGAF (ADM, Migration Planning).",
   "type": "object",
   "required": [
     "sequenceOrder"

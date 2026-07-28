@@ -1,8 +1,12 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/business-architecture/BusinessFunction/v1",
-  "$ref": "gsmarc://gsm/Mechanism/v1",
+  "$ref": "gsmarc://itip/Mechanism/v1",
   "title": "BusinessFunction",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
   "description": "TOGAF-sourced mechanism archetype \u2014 a unit of business behavior performed by an Organization Unit or Actor (Structure). The causal logic inside a human/organizational Structure. Extends Mechanism with TOGAF Business Architecture vocabulary. TOGAF mapping: Business Function (Content Metamodel, Business Architecture domain). Source framework: TOGAF (Business Architecture, Content Framework).",
   "type": "object",
   "required": [
@@ -25,6 +29,5 @@
       "$gsm:queryable": true,
       "description": "Degree of automation of this business function. TOGAF mapping: Business Function automation assessment."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

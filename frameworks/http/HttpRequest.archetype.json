@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/http/HttpRequest/v1",
   "title": "HttpRequest",
-  "description": "Types the data payload flowing through HTTP Effectors/Receptors when the payload is an HTTP request message. Extending archetypes add domain-specific body shapes and additional headers via $ref/allOf composition. Source: RFC 9110 (HTTP Semantics, 2022), §3.4 — Messages; RFC 9112 (HTTP/1.1, 2022), §3 — Request Line.",
+  "framework": {
+    "name": "http",
+    "version": "1.0.0"
+  },
+  "description": "Types the data payload flowing through HTTP Effectors/Receptors when the payload is an HTTP request message. Extending archetypes add domain-specific body shapes and additional headers via $ref/allOf composition. Source: RFC 9110 (HTTP Semantics, 2022), \u00a73.4 \u2014 Messages; RFC 9112 (HTTP/1.1, 2022), \u00a73 \u2014 Request Line.",
   "type": "object",
   "required": [
     "method",
@@ -11,12 +15,19 @@
   "if": {
     "properties": {
       "method": {
-        "enum": ["POST", "PUT", "PATCH"]
+        "enum": [
+          "POST",
+          "PUT",
+          "PATCH"
+        ]
       }
     }
   },
   "then": {
-    "required": ["body", "contentType"]
+    "required": [
+      "body",
+      "contentType"
+    ]
   },
   "properties": {
     "method": {
@@ -30,7 +41,7 @@
         "DELETE",
         "OPTIONS"
       ],
-      "description": "HTTP request method. GET — retrieve a representation of the target resource (§9.3.1). HEAD — same as GET but without response body (§9.3.2). POST — process a representation subordinate to the target resource (§9.3.3). PUT — replace the target resource state entirely (§9.3.4). PATCH — partially modify the target resource state (RFC 5789). DELETE — remove the target resource (§9.3.5). OPTIONS — describe communication options for the target resource (§9.3.7). Source: RFC 9110 §9.",
+      "description": "HTTP request method. GET \u2014 retrieve a representation of the target resource (\u00a79.3.1). HEAD \u2014 same as GET but without response body (\u00a79.3.2). POST \u2014 process a representation subordinate to the target resource (\u00a79.3.3). PUT \u2014 replace the target resource state entirely (\u00a79.3.4). PATCH \u2014 partially modify the target resource state (RFC 5789). DELETE \u2014 remove the target resource (\u00a79.3.5). OPTIONS \u2014 describe communication options for the target resource (\u00a79.3.7). Source: RFC 9110 \u00a79.",
       "$gsm:identityBound": true,
       "$gsm:queryable": true
     },
@@ -38,7 +49,7 @@
       "type": "string",
       "format": "uri-template",
       "minLength": 1,
-      "description": "URI template identifying the target resource (e.g., '/api/users/{id}'). Resolved at runtime with concrete values. Source: RFC 6570 (URI Template, 2012); RFC 9110 §7.1 — Determining the Target Resource.",
+      "description": "URI template identifying the target resource (e.g., '/api/users/{id}'). Resolved at runtime with concrete values. Source: RFC 6570 (URI Template, 2012); RFC 9110 \u00a77.1 \u2014 Determining the Target Resource.",
       "$gsm:identityBound": true,
       "$gsm:queryable": true
     },
@@ -46,17 +57,16 @@
       "type": "string",
       "pattern": "^[a-zA-Z0-9][a-zA-Z0-9!#$&\\-^_.+]*/[a-zA-Z0-9][a-zA-Z0-9!#$&\\-^_.+]*",
       "minLength": 3,
-      "description": "Media type of the request payload body (IANA media type, e.g., 'application/json'). Source: RFC 9110 §8.3 — Content-Type; RFC 6838 — Media Type Specifications."
+      "description": "Media type of the request payload body (IANA media type, e.g., 'application/json'). Source: RFC 9110 \u00a78.3 \u2014 Content-Type; RFC 6838 \u2014 Media Type Specifications."
     },
     "accept": {
       "type": "string",
       "pattern": "^[a-zA-Z0-9*][a-zA-Z0-9!#$&\\-^_.+]*/[a-zA-Z0-9*][a-zA-Z0-9!#$&\\-^_.+]*",
       "minLength": 3,
-      "description": "Media type(s) acceptable in the response, for content negotiation (e.g., 'application/json', 'text/html;q=0.9, application/json'). Supports quality-value syntax. Source: RFC 9110 §12.5.1 — Accept."
+      "description": "Media type(s) acceptable in the response, for content negotiation (e.g., 'application/json', 'text/html;q=0.9, application/json'). Supports quality-value syntax. Source: RFC 9110 \u00a712.5.1 \u2014 Accept."
     },
     "body": {
-      "description": "Request message content. At protocol level, unconstrained; extending archetypes constrain this to a domain-specific shape via $ref/allOf composition. Source: RFC 9110 §6.4 — Content."
+      "description": "Request message content. At protocol level, unconstrained; extending archetypes constrain this to a domain-specific shape via $ref/allOf composition. Source: RFC 9110 \u00a76.4 \u2014 Content."
     }
-  },
-  "unevaluatedProperties": false
+  }
 }

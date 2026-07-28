@@ -1,4 +1,8 @@
 {
+  "framework": {
+    "name": "nis2",
+    "version": "1.0.0"
+  },
   "source": {
     "authority": "European Parliament and Council of the European Union",
     "regulation": "Directive (EU) 2022/2555 (NIS2)",
@@ -14,5 +18,5 @@
   "verb": "ENSURE",
   "qualifier": "gsmarc://itip/frameworks/nis2/supply-chain/Nis2SupplyChainSecurity/v1",
   "purpose": "$nis2:classified-entity",
-  "deploymentNotes": "At deployment: 'structure' resolves to the governing Structure. 'purpose' resolves to every Structure classified ESSENTIAL or IMPORTANT. This Directive elevates supply chain security from Art 21(2)(d) to a standalone Directive because it governs cross-entity relationships (entity → supplier). Art 21(3) adds specific supply chain due diligence requirements. Operationalized by Norms checking supplier assessment completion and security posture."
+  "deploymentNotes": "At deployment: 'structure' resolves to the governing Structure. 'purpose' resolves to every Structure classified ESSENTIAL or IMPORTANT. This Directive elevates supply chain security from Art 21(2)(d) to a standalone Directive because it governs cross-entity relationships (entity \u2192 supplier). Art 21(3) adds specific supply chain due diligence requirements. Operationalized by Norms checking supplier assessment completion and security posture."
 }

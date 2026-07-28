@@ -75,7 +75,7 @@ This keeps three distinct concepts separate:
 PascalCase is used for governed statement filenames. Kebab-case is used for supporting
 source files and directories.
 
-Existing files will migrate to this convention incrementally.
+This convention is fully applied across `frameworks/`.
 
 ## Framework membership
 
@@ -113,7 +113,7 @@ Archetype statements therefore declare `framework` directly at the top level:
 ```json
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://gdpr/GdprProcessingPrinciple/v1",
+  "$id": "gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
   "title": "GdprProcessingPrinciple",
   "framework": {
     "name": "gdpr",
@@ -124,8 +124,8 @@ Archetype statements therefore declare `framework` directly at the top level:
 
 ### Other ascription statements
 
-The other seven GSM bases use `unevaluatedProperties: false`, so the typing Archetype
-must declare the `framework` property.
+The other seven GSM bases declare no properties beyond their own governance grammar,
+so the typing Archetype must declare the `framework` property.
 
 Every non-Archetype statement distributed in an ITIP framework MUST therefore be typed
 by an ITIP framework Archetype or one of its descendants, never directly by a GSM base.
@@ -220,7 +220,7 @@ Framework directories follow the source model's own taxonomy rather than GSM sub
 type:
 
 ```text
-def/gdpr/
+frameworks/gdpr/
   principles/
   lawful-basis/
   data-subject-rights/
@@ -530,8 +530,12 @@ the normal DM lifecycle.
 Frameworks follow their own model-native taxonomy:
 
 ```text
-def/
+frameworks/
   itip/
+    base/
+      Ascription.archetype.json
+      Structure.archetype.json
+      ...
     ...
     framework.json
   http/
@@ -557,7 +561,7 @@ def/
 Only the predefined default full-stack organization framework belongs in this repository.
 Other organization frameworks are created and persisted at runtime through ITIP.
 
-See [`def/README.md`](def/README.md) for the current model inventory and inter-model
+See [`frameworks/README.md`](frameworks/README.md) for the current model inventory and inter-model
 articulation analysis.
 
 ## Verified DM constraints

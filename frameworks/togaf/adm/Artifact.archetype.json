@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/adm/Artifact/v1",
   "title": "Artifact",
-  "description": "TOGAF-sourced archetype — a granular architecture work product (catalog, matrix, or diagram) that composes a Deliverable. Artifacts are the atomic documentation units of TOGAF's ADM. Placed in unclassified/ for GSM placement deliberation: may be a description-plane evidence object (observability artifact), a definition-plane output, or a governance record. TOGAF mapping: Artifact (ADM Content Metamodel, Architecture Governance). Source framework: TOGAF (ADM, Content Framework).",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced archetype \u2014 a granular architecture work product (catalog, matrix, or diagram) that composes a Deliverable. Artifacts are the atomic documentation units of TOGAF's ADM. Placed in unclassified/ for GSM placement deliberation: may be a description-plane evidence object (observability artifact), a definition-plane output, or a governance record. TOGAF mapping: Artifact (ADM Content Metamodel, Architecture Governance). Source framework: TOGAF (ADM, Content Framework).",
   "type": "object",
   "required": [
     "artifactType"

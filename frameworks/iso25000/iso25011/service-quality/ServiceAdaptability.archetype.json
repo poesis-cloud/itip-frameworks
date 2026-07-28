@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25011/service-quality/ServiceAdaptability/v1",
   "title": "ServiceAdaptability",
-  "description": "ISO 25011 quality archetype — IT Service Adaptability viability dimension. Degree to which an IT service can be effectively and efficiently adapted to meet evolving user needs. Sub-characteristics: Customizability, Initiative. Rootless archetype — maps to the systemics concept of adaptation (variety absorption). Source: ISO/IEC TS 25011:2017 §7.7.",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25011 quality archetype \u2014 IT Service Adaptability viability dimension. Degree to which an IT service can be effectively and efficiently adapted to meet evolving user needs. Sub-characteristics: Customizability, Initiative. Rootless archetype \u2014 maps to the systemics concept of adaptation (variety absorption). Source: ISO/IEC TS 25011:2017 \u00a77.7.",
   "type": "object",
   "required": [
     "customizability"

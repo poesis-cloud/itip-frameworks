@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/togaf/governance/ServiceQuality/v1",
   "title": "ServiceQuality",
-  "description": "TOGAF-sourced rootless archetype — cross-domain governance concept capturing quality-of-service expectations and commitments. Complements ISO 25010 product quality characteristics with TOGAF's architectural governance perspective on service-level expectations. Rootless archetype — used to qualify governance Directives and Norms relating to service delivery quality. TOGAF mapping: Service Quality (Content Metamodel — cross-domain governance attribute). Source framework: TOGAF (Service Quality, Architecture Governance).",
+  "framework": {
+    "name": "togaf",
+    "version": "1.0.0"
+  },
+  "description": "TOGAF-sourced rootless archetype \u2014 cross-domain governance concept capturing quality-of-service expectations and commitments. Complements ISO 25010 product quality characteristics with TOGAF's architectural governance perspective on service-level expectations. Rootless archetype \u2014 used to qualify governance Directives and Norms relating to service delivery quality. TOGAF mapping: Service Quality (Content Metamodel \u2014 cross-domain governance attribute). Source framework: TOGAF (Service Quality, Architecture Governance).",
   "type": "object",
   "required": [
     "qualityDomain"

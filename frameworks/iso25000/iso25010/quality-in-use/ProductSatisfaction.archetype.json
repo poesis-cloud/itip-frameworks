@@ -2,7 +2,11 @@
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://itip/frameworks/iso25000/iso25010/quality-in-use/ProductSatisfaction/v1",
   "title": "ProductSatisfaction",
-  "description": "ISO 25010-sourced quality archetype — Satisfaction quality-in-use characteristic. Measures the degree to which user needs are satisfied when a product is used in a specified context. Sub-characteristics: Usefulness, Trust, Pleasure, Comfort. Rootless archetype — used as qualifier in Directives/Norms. Source: ISO/IEC 25010 (Quality in Use — Satisfaction).",
+  "framework": {
+    "name": "iso25000",
+    "version": "1.0.0"
+  },
+  "description": "ISO 25010-sourced quality archetype \u2014 Satisfaction quality-in-use characteristic. Measures the degree to which user needs are satisfied when a product is used in a specified context. Sub-characteristics: Usefulness, Trust, Pleasure, Comfort. Rootless archetype \u2014 used as qualifier in Directives/Norms. Source: ISO/IEC 25010 (Quality in Use \u2014 Satisfaction).",
   "type": "object",
   "required": [
     "usefulnessRating"
@@ -17,7 +21,7 @@
         "HIGHLY_USEFUL"
       ],
       "$gsm:queryable": true,
-      "description": "User-perceived usefulness — degree to which the product achieves pragmatic goals including results and consequences of use."
+      "description": "User-perceived usefulness \u2014 degree to which the product achieves pragmatic goals including results and consequences of use."
     },
     "trustLevel": {
       "type": "string",

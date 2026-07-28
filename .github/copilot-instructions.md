@@ -28,7 +28,7 @@ domain owns the concept; the GSM subject-type mapping is expressed in the schema
 Models compose **through the GSM governance layer** (Directives qualifying Subjects using archetypes from
 different models), never through schema-level cross-references between framework folders. Do not add
 filesystem-relative `$ref` paths that cross from one framework's folder into another's — cross-model
-articulation is documented in `def/README.md`, not encoded in schema `$ref`.
+articulation is documented in `frameworks/README.md`, not encoded in schema `$ref`.
 
 ### `$id` namespace stability
 Every archetype schema's `$id` uses the `gsmarc://itip/frameworks/{authority}/{taxonomy}/{Title}/v1` scheme.
@@ -42,9 +42,12 @@ framework's `README.md` for the expected citation format). Do not reproduce copy
 verbatim beyond short quotation — only the derived GSM-compatible vocabulary.
 
 ### Statement file naming convention
-Follow the centralized convention from `sie-definition-manager/def/statement/README.md`:
-- Archetype schemas (`$schema: gsmarc://gsm/Archetype/v1`): filename = `{Title}.schema.json`.
-- Statement instances: filename = `{ConceptName}{ArchetypeTitle}.json`.
+See the "Terminology and file conventions" section of `README.md` (authoritative for this repository):
+- Archetype statements (`$schema: gsmarc://gsm/Archetype/v1`): filename = `{Title}.archetype.json`.
+- Other ascription statements: filename = `{StatementIdentity}.{gsmSubjectType}.json`, e.g.
+  `ProcessingPrinciples.directive.json`, `Accountability.norm.json`.
+- The typing Archetype is declared by the framework descriptor's `elements[].archetype`,
+  never by the filename.
 
 ---
 

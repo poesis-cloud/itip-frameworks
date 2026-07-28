@@ -73,6 +73,6 @@ See the [SQuaRE Series — GSM Compatibility Trace](../README.md#square-series--
 
 | Type | Naming | Count | Standards |
 | ------ | -------- | ------- | ----------- |
-| Archetype schemas | `*.schema.json` | 39 | 16 (ISO 25010) + 8 (ISO 25011) + 15 (ISO 25012) |
+| Archetype schemas | `*.archetype.json` | 39 | 16 (ISO 25010) + 8 (ISO 25011) + 15 (ISO 25012) |
 | READMEs | `README.md` | 4 | 1 unified + 3 per-standard |
 | **Total** | | **43** | |

@@ -1,4 +1,8 @@
 {
+  "framework": {
+    "name": "nis2",
+    "version": "1.0.0"
+  },
   "source": {
     "authority": "European Parliament and Council of the European Union",
     "regulation": "Directive (EU) 2022/2555 (NIS2)",

@@ -10,7 +10,7 @@
 
 | Layer | What it produces | File naming |
 | ------- | ----------------- | ------------- |
-| **P8 Layer 2 — Archetype schemas** | GDPR-specific vocabulary (processing principles, lawful bases, data subject rights, controller roles, breach types, transfer mechanisms) | `{Title}.schema.json` |
+| **P8 Layer 2 — Archetype schemas** | GDPR-specific vocabulary (processing principles, lawful bases, data subject rights, controller roles, breach types, transfer mechanisms) | `{Title}.archetype.json` |
 | **P8 Layer 3 — Sourced Directives** | Concrete legal mandates from GDPR articles, expressed in GSM Directive grammar | `{ConceptName}SourcedDirective.json` |
 | **P8 Layer 3 — Sourced Norms** | Concrete measurable requirements from GDPR articles, expressed in GSM Norm grammar | `{ConceptName}SourcedNorm.json` |
 
@@ -294,7 +294,7 @@ See `../README.md` for full articulation analysis including:
 
 | Type | Naming | Count | Files |
 | ------ | -------- | ------- | ------- |
-| Vocabulary schemas | `*.schema.json` | 15 | GdprProcessingPrinciple, GdprLawfulBasis, GdprConsent, GdprSpecialCategoryData, GdprDataSubjectRight, GdprTransparencyObligation, GdprControllerProcessorRole, GdprProcessingActivity, GdprDataProtectionByDesign, GdprDataProtectionOfficer, GdprProcessorAgreement, GdprSecurityMeasure, GdprDataBreach, GdprImpactAssessment, GdprTransferMechanism |
+| Vocabulary schemas | `*.archetype.json` | 15 | GdprProcessingPrinciple, GdprLawfulBasis, GdprConsent, GdprSpecialCategoryData, GdprDataSubjectRight, GdprTransparencyObligation, GdprControllerProcessorRole, GdprProcessingActivity, GdprDataProtectionByDesign, GdprDataProtectionOfficer, GdprProcessorAgreement, GdprSecurityMeasure, GdprDataBreach, GdprImpactAssessment, GdprTransferMechanism |
 | Sourced Directives | `*SourcedDirective.json` | 26 | ProcessingPrinciples, LawfulProcessing, ConsentRequirements, ChildConsent, SpecialCategoryRestriction, TransparentCommunication, InformationDirectCollection, InformationIndirectCollection, RightOfAccess, RightToRectification, RightToErasure, RightToRestriction, NotificationObligation, RightToPortability, RightToObject, AutomatedDecisionMaking, DataProtectionByDesign, JointControllers, ProcessorObligations, RecordsOfProcessing, SecurityOfProcessing, DpoDesignation, BreachNotificationAuthority, BreachNotificationSubject, DPIA, TransferRestriction |
 | Sourced Norms | `*SourcedNorm.json` | 57 | 7 principles (Art5), 7 lawful-basis (Art6-9), 15 data-subject-rights (Art12-22), 16 controller-processor (Art25-39), 4 breach-notification (Art33-34), 3 impact-assessment (Art35-36), 5 transfers (Art44-49) |
 | **Total** | | **98** | |

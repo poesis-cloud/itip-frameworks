@@ -1,4 +1,8 @@
 {
+  "framework": {
+    "name": "gdpr",
+    "version": "1.0.0"
+  },
   "source": {
     "authority": "European Parliament and Council of the European Union",
     "regulation": "Regulation (EU) 2016/679 (GDPR)",
@@ -14,5 +18,5 @@
   "verb": "ENSURE",
   "qualifier": "gsmarc://itip/frameworks/gdpr/breach-notification/GdprDataBreach/v1",
   "purpose": "$gdpr:personal-data-processing",
-  "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope — breach notification governs the processing system's incident response capabilities. Mandates breach notification to the supervisory authority within 72 hours unless risk is unlikely. Operationalized by temporal Norms (72h deadline) and content completeness Norms."
+  "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope \u2014 breach notification governs the processing system's incident response capabilities. Mandates breach notification to the supervisory authority within 72 hours unless risk is unlikely. Operationalized by temporal Norms (72h deadline) and content completeness Norms."
 }
