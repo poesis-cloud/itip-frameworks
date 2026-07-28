@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://gsm-frameworks/togaf/application-architecture/ApplicationInterface/v1",
-  "$ref": "gsmarc://gsm-frameworks/Effector/v1",
+  "$ref": "gsmarc://gsm-frameworks/FrameworkEffector/v1",
   "title": "ApplicationInterface",
   "framework": {
     "name": "togaf",

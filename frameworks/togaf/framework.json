@@ -2,7 +2,7 @@
   "name": "togaf",
   "version": "1.0.0",
   "description": "TOGAF-sourced vocabulary across business, application, data, and technology architecture, the ADM, and architecture governance.",
-  "itipVersion": "1.0.0",
+  "baseVersion": "1.0.0",
   "elements": [
     {
       "path": "adm/AdmPhaseRecord.archetype.json"

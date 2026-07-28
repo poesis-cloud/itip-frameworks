@@ -1,13 +1,13 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://gsm-frameworks/SourcedDirective/v1",
-  "$ref": "gsmarc://gsm-frameworks/Directive/v1",
+  "$ref": "gsmarc://gsm-frameworks/FrameworkDirective/v1",
   "title": "SourcedDirective",
   "framework": {
-    "name": "itip",
+    "name": "sourcing",
     "version": "1.0.0"
   },
-  "description": "ITIP archetype \u2014 a Directive ascription whose statement is sourced from a legal/regulatory authority text. Extends Directive with legal provenance (source) and deployment guidance. All Directive fields (structure, modal, verb, qualifier, purpose) are inherited \u2014 not redefined. Source: ITIP (domain archetype for regulatory model sourcing).",
+  "description": "Archetype \u2014 a Directive ascription whose statement is sourced from a legal/regulatory authority text. Extends Directive with legal provenance (source) and deployment guidance. All Directive fields (structure, modal, verb, qualifier, purpose) are inherited \u2014 not redefined. Source: gsm-frameworks (regulatory sourcing vocabulary).",
   "type": "object",
   "required": [
     "source"

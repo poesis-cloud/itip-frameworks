@@ -1,13 +1,13 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://gsm-frameworks/SourcedNorm/v1",
-  "$ref": "gsmarc://gsm-frameworks/Norm/v1",
+  "$ref": "gsmarc://gsm-frameworks/FrameworkNorm/v1",
   "title": "SourcedNorm",
   "framework": {
-    "name": "itip",
+    "name": "sourcing",
     "version": "1.0.0"
   },
-  "description": "ITIP archetype \u2014 a Norm ascription whose statement is sourced from a legal/regulatory authority text. Extends Norm with legal provenance (source, operationalizes). All Norm fields (structure, qualifier, applicability, assertion, toleranceMode, temporal fields) are inherited \u2014 not redefined. Source: ITIP (domain archetype for regulatory model sourcing).",
+  "description": "Archetype \u2014 a Norm ascription whose statement is sourced from a legal/regulatory authority text. Extends Norm with legal provenance (source, operationalizes). All Norm fields (structure, qualifier, applicability, assertion, toleranceMode, temporal fields) are inherited \u2014 not redefined. Source: gsm-frameworks (regulatory sourcing vocabulary).",
   "type": "object",
   "required": [
     "source",

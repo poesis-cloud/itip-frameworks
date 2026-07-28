@@ -6,7 +6,7 @@ This document defines the **inter-model articulation** for all sourced models in
 
 Models are composed **through GSM**, not **within schemas**:
 
-- Each model produces pure schemas in its own folder (`frameworks/{model}/`), inheriting the ITIP base Archetypes in `frameworks/itip/base/` rather than the GSM bases directly
+- Each model produces pure schemas in its own folder (`frameworks/{model}/`), inheriting the framework base Archetypes in `frameworks/base/` rather than the GSM bases directly
 - Cross-model references happen at the **governance layer**: Directives qualify Subjects using archetypes from different models
 - The GSM Ascription mechanism binds multiple Definition layers onto the same Subject
 
@@ -50,7 +50,7 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 
 ## Model-Native Organization (P9)
 
-Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref` to the corresponding ITIP base Archetype (`gsmarc://gsm-frameworks/{SubjectType}/v1`).
+Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref` to the corresponding framework base Archetype (`gsmarc://gsm-frameworks/Framework{SubjectType}/v1`).
 
 | TOGAF Taxonomy | NIS2 Taxonomy | ISO 25010 Taxonomy |
 | --------------- | -------------- | ------------------- |

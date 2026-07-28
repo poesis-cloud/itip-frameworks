@@ -1,8 +1,8 @@
-# ITIP Frameworks
+# GSM Frameworks
 
-Framework definitions for the **IT Intelligence Platform (ITIP)**, built on the
-Generative System Model (GSM), registered as governed ascriptions in the SIE Definition
-Manager (DM), and assembled into organization-specific framework stacks by ITIP.
+Framework definitions built on the **Generative System Model (GSM)**, registered as governed
+ascriptions in the SIE Definition Manager (DM), and assembled into organization-specific
+framework stacks by consuming domain applications such as the IT Intelligence Platform (ITIP).
 
 > This repository is in a design-time phase. It contains framework model statements and
 > supporting sources, not runnable application code.
@@ -127,9 +127,9 @@ Archetype statements therefore declare `framework` directly at the top level:
 The other seven GSM bases declare no properties beyond their own governance grammar,
 so the typing Archetype must declare the `framework` property.
 
-Every non-Archetype statement distributed in an ITIP framework MUST therefore be typed
-by an ITIP framework Archetype or one of its descendants, never directly by a GSM base.
-The seven ITIP bases compose a rootless framework-membership facet that declares and
+Every non-Archetype statement distributed by this repository MUST therefore be typed
+by an framework base Archetype or one of its descendants, never directly by a GSM base.
+The seven framework bases compose a rootless framework-membership facet that declares and
 requires the object.
 
 The same path carries authorship and future ITIP-wide statement concerns without adding
@@ -169,8 +169,8 @@ organization-stack semantics.
 
 The ITIP framework binds GSM to the IT framework ecosystem.
 
-It defines seven inheritable ITIP base Archetypes, corresponding to every extensible GSM
-base. Each ITIP base:
+It defines seven inheritable framework base Archetypes, corresponding to every extensible GSM
+base. Each framework base:
 
 1. inherits the corresponding GSM base through a top-level `$ref`;
 2. composes ITIP-wide rootless facets through `allOf`.
@@ -179,7 +179,7 @@ base. Each ITIP base:
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://gsm-frameworks/Structure/v1",
-  "title": "ItipStructure",
+  "title": "FrameworkStructure",
   "framework": {
     "name": "itip",
     "version": "1.0.0"
@@ -253,7 +253,7 @@ organization Archetype
         ↓ $ref
 domain or ITIP Archetype
         ↓ $ref
-ITIP base Archetype
+framework base Archetype
         ↓ $ref
 GSM base Archetype
 ```
@@ -592,6 +592,6 @@ governance grammar, not reproductions of source standards' normative text. See
 
 ## License
 
-ITIP Frameworks is licensed under the **[Business Source License 1.1](LICENSE)**
+GSM Frameworks is licensed under the **[Business Source License 1.1](LICENSE)**
 (BUSL-1.1), with the same Additional Use Grant, 2030-07-01 Change Date, and
 AGPL-3.0-or-later Change License as GSM and the other Poesis engine repositories.

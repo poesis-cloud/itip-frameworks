@@ -1,10 +1,10 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://gsm-frameworks/Ascription/v1",
-  "title": "ItipAscription",
-  "description": "ITIP rootless facet \u2014 the ITIP-wide statement concerns carried by every non-Archetype ascription statement distributed in an ITIP framework. Composed through allOf by the seven ITIP base Archetypes, and therefore inherited by every domain and organization framework Archetype derived from them. Rootless: it has no top-level $ref and never determines a GSM subject type. Archetype statements carry the same members directly at the top level because gsm/Archetype is sealed. Source: ITIP (framework foundation).",
+  "$id": "gsmarc://gsm-frameworks/FrameworkAscription/v1",
+  "title": "FrameworkAscription",
+  "description": "Catalogue-wide rootless facet \u2014 the Catalogue-wide statement concerns carried by every non-Archetype ascription statement distributed by this repository. Composed through allOf by the seven framework base Archetypes, and therefore inherited by every domain and organization framework Archetype derived from them. Rootless: it has no top-level $ref and never determines a GSM subject type. Archetype statements carry the same members directly at the top level because gsm/Archetype is sealed. Source: gsm-frameworks (framework foundation).",
   "framework": {
-    "name": "itip",
+    "name": "base",
     "version": "1.0.0"
   },
   "type": "object",
@@ -38,7 +38,7 @@
     },
     "authorship": {
       "type": "object",
-      "description": "Authorship \u2014 an ITIP concern, not a GSM or DM concern. For human-authored statements ITIP derives it from the authenticated session and MUST reject or ignore client-supplied values. For system-authored statements the registered technical client declares it and it is trusted by admission: suitable for provenance and audit context, never non-repudiation evidence.",
+      "description": "Authorship \u2014 an consuming-platform concern, not a GSM or DM concern. For human-authored statements the consuming platform derives it from the authenticated session and MUST reject or ignore client-supplied values. For system-authored statements the registered technical client declares it and it is trusted by admission: suitable for provenance and audit context, never non-repudiation evidence.",
       "required": [
         "identity",
         "identityIssuer"

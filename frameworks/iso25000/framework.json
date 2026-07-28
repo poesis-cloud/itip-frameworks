@@ -2,7 +2,7 @@
   "name": "iso25000",
   "version": "1.0.0",
   "description": "ISO/IEC 25000 SQuaRE-sourced quality vocabulary \u2014 ISO 25010 product and quality-in-use, ISO 25011 service quality, ISO 25012 data quality.",
-  "itipVersion": "1.0.0",
+  "baseVersion": "1.0.0",
   "elements": [
     {
       "path": "iso25010/product-quality/ProductAvailability.archetype.json"

@@ -2,7 +2,7 @@
   "name": "gdpr",
   "version": "1.0.0",
   "description": "GDPR-sourced vocabulary and governance statements \u2014 principles, lawful basis, data subject rights, controller/processor duties, transfers, breach notification, and impact assessment.",
-  "itipVersion": "1.0.0",
+  "baseVersion": "1.0.0",
   "elements": [
     {
       "path": "breach-notification/AuthorityNotification72h.norm.json",

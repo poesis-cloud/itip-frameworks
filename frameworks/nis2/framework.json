@@ -2,7 +2,7 @@
   "name": "nis2",
   "version": "1.0.0",
   "description": "NIS2-sourced vocabulary and governance statements \u2014 entity classification, risk management, incident reporting, and supply-chain security.",
-  "itipVersion": "1.0.0",
+  "baseVersion": "1.0.0",
   "elements": [
     {
       "path": "entity-classification/Nis2EntityClassification.archetype.json"

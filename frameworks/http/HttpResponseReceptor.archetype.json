@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$ref": "gsmarc://gsm-frameworks/Receptor/v1",
+  "$ref": "gsmarc://gsm-frameworks/FrameworkReceptor/v1",
   "$id": "gsmarc://gsm-frameworks/http/HttpResponseReceptor/v1",
   "title": "HttpResponseReceptor",
   "framework": {

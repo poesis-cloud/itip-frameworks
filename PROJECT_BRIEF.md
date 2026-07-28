@@ -33,7 +33,7 @@ This repo has no execution architecture of its own. It is a **content source** r
 
 ## 6. Team Roles
 
-This repo is content-only (no dev/QA sprint cycle in the application sense). Maintenance follows the same team pattern as sibling ITIP repos:
+This repo is content-only (no dev/QA sprint cycle in the application sense). Maintenance follows the same team pattern as sibling Poesis repos:
 
 | Agent | Name | Role |
 | ------- | ------ | ------ |

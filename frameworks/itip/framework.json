@@ -1,32 +1,9 @@
 {
   "name": "itip",
   "version": "1.0.0",
-  "description": "ITIP framework foundation \u2014 the seven ITIP base Archetypes, the ITIP-wide ascription facet, meta-governance appraisal vocabulary, and shared IT technology vocabulary.",
+  "description": "IT Intelligence Platform (ITIP) domain framework \u2014 meta-governance appraisal vocabulary and mechanisms, and shared IT technology vocabulary.",
+  "baseVersion": "1.0.0",
   "elements": [
-    {
-      "path": "base/Ascription.archetype.json"
-    },
-    {
-      "path": "base/Directive.archetype.json"
-    },
-    {
-      "path": "base/Effector.archetype.json"
-    },
-    {
-      "path": "base/Interaction.archetype.json"
-    },
-    {
-      "path": "base/Mechanism.archetype.json"
-    },
-    {
-      "path": "base/Norm.archetype.json"
-    },
-    {
-      "path": "base/Receptor.archetype.json"
-    },
-    {
-      "path": "base/Structure.archetype.json"
-    },
     {
       "path": "meta-governance/AppraisalFinding.archetype.json"
     },
@@ -38,13 +15,7 @@
     },
     {
       "path": "meta-governance/DirectiveNormOperationalization.mechanism.json",
-      "archetype": "ItipMechanism"
-    },
-    {
-      "path": "meta-governance/SourcedDirective.archetype.json"
-    },
-    {
-      "path": "meta-governance/SourcedNorm.archetype.json"
+      "archetype": "FrameworkMechanism"
     },
     {
       "path": "technology/SoftwareTechnology.archetype.json"

@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
   "$id": "gsmarc://gsm-frameworks/togaf/governance/ArchitectureConstraintCompliance/v1",
-  "$ref": "gsmarc://gsm-frameworks/Norm/v1",
+  "$ref": "gsmarc://gsm-frameworks/FrameworkNorm/v1",
   "title": "ArchitectureConstraintCompliance",
   "framework": {
     "name": "togaf",
