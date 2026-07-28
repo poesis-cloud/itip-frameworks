@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprProcessorAgreement/v1",
+  "$id": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprProcessorAgreement/v1",
   "title": "GdprProcessorAgreement",
   "framework": {
     "name": "gdpr",

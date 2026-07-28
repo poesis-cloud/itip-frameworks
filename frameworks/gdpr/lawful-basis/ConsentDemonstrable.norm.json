@@ -12,8 +12,8 @@
     ],
     "text": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/lawful-basis/ConsentRequirements/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprConsent/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/lawful-basis/ConsentRequirements/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprConsent/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprLawfulBasis.lawfulBasis == 'CONSENT'",
   "assertion": "consentDemonstrable == true",
   "toleranceMode": "INSTANTANEOUS"

@@ -18,7 +18,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/transfers/GdprTransferMechanism/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/transfers/GdprTransferMechanism/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller or processor performing international transfers (accountable). 'purpose' resolves to the adopter's personal data processing scope \u2014 transfer restrictions govern the processing system's cross-border data flow capabilities. Mandates that international transfers occur only under an approved transfer mechanism (adequacy decision, appropriate safeguards, BCRs, SCCs, or derogation). Operationalized by Norms checking transfer safeguard in place, adequacy validity, appropriate safeguards, and derogation conditions."
 }

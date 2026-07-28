@@ -17,7 +17,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/impact-assessment/GdprImpactAssessment/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/impact-assessment/GdprImpactAssessment/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope \u2014 DPIA governs the processing system's risk assessment capabilities. Mandates DPIA prior to high-risk processing. Art 35(3) lists three mandatory scenarios. Art 35(7) specifies minimum DPIA contents. Art 36 requires prior consultation with supervisory authority when residual risk remains HIGH. Operationalized by Norms checking DPIA conducted, contents complete, and prior consultation."
 }

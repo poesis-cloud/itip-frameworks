@@ -1,10 +1,10 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/SoftwareTechnology/v1",
-  "$ref": "gsmarc://itip/Structure/v1",
+  "$id": "gsmarc://gsm-frameworks/SoftwareTechnology/v1",
+  "$ref": "gsmarc://gsm-frameworks/Structure/v1",
   "allOf": [
     {
-      "$ref": "gsmarc://itip/frameworks/scap/cpe/ScapPlatformIdentifier/v1"
+      "$ref": "gsmarc://gsm-frameworks/scap/cpe/ScapPlatformIdentifier/v1"
     }
   ],
   "title": "SoftwareTechnology",
@@ -68,7 +68,7 @@
         ],
         "properties": {
           "cce": {
-            "$ref": "gsmarc://itip/frameworks/scap/cce/ScapConfigurationSetting/v1",
+            "$ref": "gsmarc://gsm-frameworks/scap/cce/ScapConfigurationSetting/v1",
             "description": "SCAP CCE entry formally identifying this configuration concept. Carries the full CCE schema (cceId, settingDescription, platform, technicalMechanism, parameters) validated against ScapConfigurationSetting. Omit when no CCE entry exists for this setting."
           },
           "name": {

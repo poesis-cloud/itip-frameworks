@@ -17,7 +17,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprControllerProcessorRole/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprControllerProcessorRole/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller(s) (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates that joint controllers document their respective responsibilities in a transparent arrangement, with the essence made available to data subjects. Data subject may exercise rights against each joint controller regardless of arrangement terms (Art 26(3)). Operationalized by Norm checking arrangement documentation."
 }

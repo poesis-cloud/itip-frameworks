@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/SourcedNorm/v1",
-  "$ref": "gsmarc://itip/Norm/v1",
+  "$id": "gsmarc://gsm-frameworks/SourcedNorm/v1",
+  "$ref": "gsmarc://gsm-frameworks/Norm/v1",
   "title": "SourcedNorm",
   "framework": {
     "name": "itip",

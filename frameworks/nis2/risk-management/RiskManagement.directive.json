@@ -16,7 +16,7 @@
   "structure": "$nis2:regulatory-authority",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/nis2/risk-management/Nis2RiskManagementMeasure/v1",
+  "qualifier": "gsmarc://gsm-frameworks/nis2/risk-management/Nis2RiskManagementMeasure/v1",
   "purpose": "$nis2:classified-entity",
   "deploymentNotes": "At deployment: 'structure' resolves to the governing Structure. 'purpose' resolves to every Structure classified ESSENTIAL or IMPORTANT. This Directive mandates implementation of all 10 measure categories from Art 21(2)(a)-(j). Operationalized by 10 Norms (one per measure category) checking implementationLevel != NOT_IMPLEMENTED. The proportionality principle (Art 21(1)) means measure intensity scales with entity size, exposure, and risk severity."
 }

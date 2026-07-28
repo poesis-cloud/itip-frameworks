@@ -12,8 +12,8 @@
     ],
     "text": "The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/controller-processor/DataProtectionByDesign/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprDataProtectionByDesign/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/controller-processor/DataProtectionByDesign/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprDataProtectionByDesign/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER']",
   "assertion": "defaultDataMinimisation == true && processingLimitedByDefault == true",
   "toleranceMode": "INSTANTANEOUS"

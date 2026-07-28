@@ -17,7 +17,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprSecurityMeasure/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprSecurityMeasure/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller and processor (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates implementation of appropriate technical and organisational security measures proportionate to risk. Applies to both controllers and processors (Art 32 addresses both). Operationalized by Norms checking security measures implementation, regular testing, and personnel authorization."
 }

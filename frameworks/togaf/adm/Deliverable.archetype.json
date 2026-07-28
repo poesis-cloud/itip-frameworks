@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/togaf/adm/Deliverable/v1",
+  "$id": "gsmarc://gsm-frameworks/togaf/adm/Deliverable/v1",
   "title": "Deliverable",
   "framework": {
     "name": "togaf",

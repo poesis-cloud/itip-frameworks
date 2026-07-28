@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/nis2/risk-management/Nis2GovernanceAccountability/v1",
+  "$id": "gsmarc://gsm-frameworks/nis2/risk-management/Nis2GovernanceAccountability/v1",
   "title": "Nis2GovernanceAccountability",
   "framework": {
     "name": "nis2",

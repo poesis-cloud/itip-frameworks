@@ -17,7 +17,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. This Directive mandates transparent communication about all processing. Operationalized by Norms checking information provision completeness and format requirements."
 }

@@ -18,8 +18,8 @@
     ],
     "text": "Where personal data have not been obtained from the data subject, the controller shall provide: (a) controller identity; (c) purposes and legal basis; (d) categories of personal data; (e) recipients; (2)(a) storage period; (2)(b) rights information; (2)(f) from which source the personal data originate, and if applicable, whether it came from publicly accessible sources."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/data-subject-rights/InformationIndirectCollection/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/InformationIndirectCollection/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprTransparencyObligation.informationProvided == true",
   "assertion": "controllerIdentityDisclosed == true && purposesDisclosed == true && recipientsDisclosed == true && retentionPeriodDisclosed == true && rightsInformed == true && dataSourceDisclosed == true",
   "toleranceMode": "INSTANTANEOUS"

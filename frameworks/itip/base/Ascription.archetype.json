@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/Ascription/v1",
+  "$id": "gsmarc://gsm-frameworks/Ascription/v1",
   "title": "ItipAscription",
   "description": "ITIP rootless facet \u2014 the ITIP-wide statement concerns carried by every non-Archetype ascription statement distributed in an ITIP framework. Composed through allOf by the seven ITIP base Archetypes, and therefore inherited by every domain and organization framework Archetype derived from them. Rootless: it has no top-level $ref and never determines a GSM subject type. Archetype statements carry the same members directly at the top level because gsm/Archetype is sealed. Source: ITIP (framework foundation).",
   "framework": {

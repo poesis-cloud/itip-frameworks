@@ -17,7 +17,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "MAINTAIN",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprProcessingActivity/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprProcessingActivity/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (or processor for Art 30(2) records) (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates maintenance of processing activity records. Exemption under Art 30(5) for enterprises with fewer than 250 employees (unless processing is not occasional, involves special categories, or is likely to result in risk). Operationalized by Norms checking record maintenance and completeness."
 }

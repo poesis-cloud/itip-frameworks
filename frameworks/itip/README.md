@@ -40,10 +40,10 @@ Unitary CRUD operations. Each archetype extends Effector with **no additional pr
 
 | Schema | Extends | $id | Source |
 |--------|---------|-----|--------|
-| CreateEffector | Effector | `gsmarc://itip/CreateEffector/v1` | CRUD (James Martin, 1983) |
-| ReadEffector | Effector | `gsmarc://itip/ReadEffector/v1` | CRUD (James Martin, 1983) |
-| UpdateEffector | Effector | `gsmarc://itip/UpdateEffector/v1` | CRUD (James Martin, 1983) |
-| DeleteEffector | Effector | `gsmarc://itip/DeleteEffector/v1` | CRUD (James Martin, 1983) |
+| CreateEffector | Effector | `gsmarc://gsm-frameworks/CreateEffector/v1` | CRUD (James Martin, 1983) |
+| ReadEffector | Effector | `gsmarc://gsm-frameworks/ReadEffector/v1` | CRUD (James Martin, 1983) |
+| UpdateEffector | Effector | `gsmarc://gsm-frameworks/UpdateEffector/v1` | CRUD (James Martin, 1983) |
+| DeleteEffector | Effector | `gsmarc://gsm-frameworks/DeleteEffector/v1` | CRUD (James Martin, 1983) |
 
 **Cross-referenced by protocol frameworks:**
 
@@ -55,14 +55,14 @@ Unitary CRUD operations. Each archetype extends Effector with **no additional pr
 
 | Schema | Extends | $id | Source |
 |--------|---------|-----|--------|
-| SoftwareTechnology | ScapPlatformIdentifier (rootless) | `gsmarc://itip/SoftwareTechnology/v1` | SCAP CPE 2.3 (NIST) + ITIP |
+| SoftwareTechnology | ScapPlatformIdentifier (rootless) | `gsmarc://gsm-frameworks/SoftwareTechnology/v1` | SCAP CPE 2.3 (NIST) + ITIP |
 
 ### governance/ (2 schemas)
 
 | Schema | Extends | $id | Purpose |
 |--------|---------|-----|---------|
-| SourcedDirective | Directive | `gsmarc://itip/SourcedDirective/v1` | Template for directives sourced from external authorities |
-| SourcedNorm | Norm | `gsmarc://itip/SourcedNorm/v1` | Template for norms sourced from external authorities |
+| SourcedDirective | Directive | `gsmarc://gsm-frameworks/SourcedDirective/v1` | Template for directives sourced from external authorities |
+| SourcedNorm | Norm | `gsmarc://gsm-frameworks/SourcedNorm/v1` | Template for norms sourced from external authorities |
 
 ## Cross-Framework Articulation
 

@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$ref": "gsmarc://itip/Interaction/v1",
-  "$id": "gsmarc://itip/frameworks/http/HttpResponseInteraction/v1",
+  "$ref": "gsmarc://gsm-frameworks/Interaction/v1",
+  "$id": "gsmarc://gsm-frameworks/http/HttpResponseInteraction/v1",
   "title": "HttpResponseInteraction",
   "framework": {
     "name": "http",

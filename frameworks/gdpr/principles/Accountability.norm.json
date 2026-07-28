@@ -12,8 +12,8 @@
     ],
     "text": "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 ('accountability')."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/principles/ProcessingPrinciples/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/principles/ProcessingPrinciples/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprProcessingPrinciple.principle == 'ACCOUNTABILITY'",
   "assertion": "principleCompliant == true",
   "toleranceMode": "INSTANTANEOUS"

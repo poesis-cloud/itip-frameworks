@@ -12,8 +12,8 @@
     ],
     "text": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/impact-assessment/Dpia/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/impact-assessment/GdprImpactAssessment/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/impact-assessment/Dpia/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/impact-assessment/GdprImpactAssessment/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprImpactAssessment.dpiaConducted == true && GdprImpactAssessment.residualHighRisk == true",
   "assertion": "priorConsultationCompleted == true",
   "toleranceMode": "INSTANTANEOUS"

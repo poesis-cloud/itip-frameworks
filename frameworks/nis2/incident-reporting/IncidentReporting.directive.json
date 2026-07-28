@@ -16,7 +16,7 @@
   "structure": "$nis2:regulatory-authority",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/nis2/incident-reporting/Nis2IncidentReporting/v1",
+  "qualifier": "gsmarc://gsm-frameworks/nis2/incident-reporting/Nis2IncidentReporting/v1",
   "purpose": "$nis2:classified-entity",
   "deploymentNotes": "At deployment: 'structure' resolves to the governing Structure. 'purpose' resolves to every Structure classified ESSENTIAL or IMPORTANT. This Directive mandates the multi-stage incident notification pipeline. Operationalized by 3 temporal Norms: 24h early warning, 72h incident notification, 1-month final report. Applies only to 'significant incidents' as defined in Art 23(3)."
 }

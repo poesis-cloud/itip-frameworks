@@ -18,8 +18,8 @@
     ],
     "text": "The record shall contain: (a) the name and contact details of the controller; (b) the purposes of the processing; (c) a description of the categories of data subjects and categories of personal data; (d) the categories of recipients; (e) transfers to third countries; (f) envisaged time limits for erasure; (g) a general description of technical and organisational security measures."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/controller-processor/RecordsOfProcessing/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprProcessingActivity/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/controller-processor/RecordsOfProcessing/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprProcessingActivity/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprProcessingActivity.recordsMaintained == true",
   "assertion": "recordContentsComplete == true",
   "toleranceMode": "INSTANTANEOUS"

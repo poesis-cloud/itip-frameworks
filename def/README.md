@@ -50,7 +50,7 @@ When mapping framework concepts to GSM, apply the dynamic/static distinction:
 
 ## Model-Native Organization (P9)
 
-Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref` to the corresponding ITIP base Archetype (`gsmarc://itip/{SubjectType}/v1`).
+Frameworks are organized by the **model's own taxonomy**, not by GSM subject type. The folder tells you what model domain owns the concept; the GSM subject type mapping is expressed in the schema content via top-level `$ref` to the corresponding ITIP base Archetype (`gsmarc://gsm-frameworks/{SubjectType}/v1`).
 
 | TOGAF Taxonomy | NIS2 Taxonomy | ISO 25010 Taxonomy |
 | --------------- | -------------- | ------------------- |

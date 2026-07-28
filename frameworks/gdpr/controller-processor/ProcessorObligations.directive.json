@@ -18,7 +18,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/controller-processor/GdprProcessorAgreement/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/controller-processor/GdprProcessorAgreement/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates that processing by a processor is governed by a binding contract containing all elements of Art 28(3)(a)-(h), that sub-processors are authorized, and that the contract is in writing. Operationalized by Norms checking instructions binding, sub-processor authorization, and contract completeness."
 }

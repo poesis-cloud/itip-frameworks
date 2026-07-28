@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/iso25000/iso25011/service-quality/ServiceUsability/v1",
+  "$id": "gsmarc://gsm-frameworks/iso25000/iso25011/service-quality/ServiceUsability/v1",
   "title": "ServiceUsability",
   "framework": {
     "name": "iso25000",

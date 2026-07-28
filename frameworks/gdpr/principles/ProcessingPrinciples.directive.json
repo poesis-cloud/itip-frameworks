@@ -21,7 +21,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the entity acting as data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope \u2014 the governed system/activities. This Directive mandates compliance with all seven processing principles. Operationalized by 7 Norms (one per principle). The accountability principle (Art 5(2)) requires the controller to demonstrate compliance \u2014 this means compliance evidence must exist, not merely compliance itself."
 }

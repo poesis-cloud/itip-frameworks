@@ -16,8 +16,8 @@
     ],
     "text": "The controller shall provide the data subject with: (a) the identity and contact details of the controller; (c) the purposes and legal basis; (e) the recipients or categories of recipients; and further: (2)(a) the period for which personal data will be stored; (2)(b) the existence of the right to request access, rectification, erasure, restriction, portability, and to object."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/data-subject-rights/InformationDirectCollection/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/InformationDirectCollection/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprTransparencyObligation.informationProvided == true",
   "assertion": "controllerIdentityDisclosed == true && purposesDisclosed == true && recipientsDisclosed == true && retentionPeriodDisclosed == true && rightsInformed == true",
   "toleranceMode": "INSTANTANEOUS"

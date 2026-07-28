@@ -16,7 +16,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST_NOT",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprSpecialCategoryData/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprSpecialCategoryData/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Default prohibition on processing special category data unless a condition from Art 9(2) is met. The modal MUST_NOT reflects the prohibition; Norms verify that a valid processing condition applies when special category data is present."
 }

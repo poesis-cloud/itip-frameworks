@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/Directive/v1",
+  "$id": "gsmarc://gsm-frameworks/Directive/v1",
   "title": "ItipDirective",
   "description": "ITIP base Archetype for Directive \u2014 the governance intent half of the DNA grammar. Inherits gsm/Directive through the top-level $ref and composes the ITIP-wide ItipAscription facet through allOf. Every non-Archetype Directive statement distributed in an ITIP framework MUST be typed by this Archetype or one of its descendants, never directly by gsm/Directive, which carries no framework membership vocabulary. Source: ITIP (framework foundation).",
   "framework": {
@@ -10,7 +10,7 @@
   "$ref": "gsmarc://gsm/Directive/v1",
   "allOf": [
     {
-      "$ref": "gsmarc://itip/Ascription/v1"
+      "$ref": "gsmarc://gsm-frameworks/Ascription/v1"
     }
   ]
 }

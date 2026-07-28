@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/iso25000/iso25010/product-quality/ProductPerformanceEfficiency/v1",
+  "$id": "gsmarc://gsm-frameworks/iso25000/iso25010/product-quality/ProductPerformanceEfficiency/v1",
   "title": "ProductPerformanceEfficiency",
   "framework": {
     "name": "iso25000",

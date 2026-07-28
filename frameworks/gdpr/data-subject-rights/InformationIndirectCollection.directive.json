@@ -18,7 +18,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates provision of specified information when personal data were not obtained from the data subject, within a reasonable period (max 1 month). Includes additional requirement to disclose data source (Art 14(2)(f)). Operationalized by Norms checking information provision (with temporal window) and content completeness."
 }

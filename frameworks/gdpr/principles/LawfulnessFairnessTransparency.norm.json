@@ -12,8 +12,8 @@
     ],
     "text": "Personal data shall be processed lawfully, fairly and in a transparent manner in relation to the data subject ('lawfulness, fairness and transparency')."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/principles/ProcessingPrinciples/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/principles/ProcessingPrinciples/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER'] && GdprProcessingPrinciple.principle == 'LAWFULNESS_FAIRNESS_TRANSPARENCY'",
   "assertion": "principleCompliant == true",
   "toleranceMode": "INSTANTANEOUS"

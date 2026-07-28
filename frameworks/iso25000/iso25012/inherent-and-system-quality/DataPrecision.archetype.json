@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/iso25000/iso25012/inherent-and-system-quality/DataPrecision/v1",
+  "$id": "gsmarc://gsm-frameworks/iso25000/iso25012/inherent-and-system-quality/DataPrecision/v1",
   "title": "DataPrecision",
   "framework": {
     "name": "iso25000",

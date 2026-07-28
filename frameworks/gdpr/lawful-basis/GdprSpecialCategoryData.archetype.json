@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprSpecialCategoryData/v1",
+  "$id": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprSpecialCategoryData/v1",
   "title": "GdprSpecialCategoryData",
   "framework": {
     "name": "gdpr",

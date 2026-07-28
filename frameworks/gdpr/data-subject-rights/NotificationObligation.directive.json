@@ -15,7 +15,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates notification of each recipient when rectification (Art 16), erasure (Art 17(1)), or restriction (Art 18) has been carried out, unless impossible or disproportionate effort. Also requires informing the data subject about recipients on request. Operationalized by Norm checking recipient notification."
 }

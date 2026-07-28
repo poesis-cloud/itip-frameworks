@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/AppraisalFinding/v1",
+  "$id": "gsmarc://gsm-frameworks/AppraisalFinding/v1",
   "title": "AppraisalFinding",
   "framework": {
     "name": "itip",

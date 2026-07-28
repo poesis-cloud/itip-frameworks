@@ -15,7 +15,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprLawfulBasis/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprLawfulBasis/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Every processing activity MUST have a documented lawful basis. Operationalized by Norms checking that a lawful basis is identified and documented for each processing operation."
 }

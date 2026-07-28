@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/togaf/business-architecture/Actor/v1",
-  "$ref": "gsmarc://itip/Structure/v1",
+  "$id": "gsmarc://gsm-frameworks/togaf/business-architecture/Actor/v1",
+  "$ref": "gsmarc://gsm-frameworks/Structure/v1",
   "title": "Actor",
   "framework": {
     "name": "togaf",

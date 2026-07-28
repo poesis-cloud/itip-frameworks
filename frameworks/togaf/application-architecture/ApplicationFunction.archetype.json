@@ -1,7 +1,7 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/togaf/application-architecture/ApplicationFunction/v1",
-  "$ref": "gsmarc://itip/Mechanism/v1",
+  "$id": "gsmarc://gsm-frameworks/togaf/application-architecture/ApplicationFunction/v1",
+  "$ref": "gsmarc://gsm-frameworks/Mechanism/v1",
   "title": "ApplicationFunction",
   "framework": {
     "name": "togaf",

@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprLawfulBasis/v1",
+  "$id": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprLawfulBasis/v1",
   "title": "GdprLawfulBasis",
   "framework": {
     "name": "gdpr",

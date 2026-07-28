@@ -16,7 +16,7 @@
   "structure": "$nis2:regulatory-authority",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/nis2/risk-management/Nis2GovernanceAccountability/v1",
+  "qualifier": "gsmarc://gsm-frameworks/nis2/risk-management/Nis2GovernanceAccountability/v1",
   "purpose": "$nis2:classified-entity",
   "deploymentNotes": "At deployment: 'structure' resolves to the governing Structure that adopts NIS2 compliance governance. 'purpose' resolves to every Structure classified as ESSENTIAL or IMPORTANT per Nis2EntityClassification. This Directive mandates management body approval of cybersecurity measures (Art 20(1)), mandatory training (Art 20(2)), and liability acknowledgment."
 }

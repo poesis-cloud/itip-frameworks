@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/nis2/entity-classification/Nis2EntityClassification/v1",
+  "$id": "gsmarc://gsm-frameworks/nis2/entity-classification/Nis2EntityClassification/v1",
   "title": "Nis2EntityClassification",
   "framework": {
     "name": "nis2",

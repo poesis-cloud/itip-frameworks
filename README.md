@@ -113,7 +113,7 @@ Archetype statements therefore declare `framework` directly at the top level:
 ```json
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
+  "$id": "gsmarc://gsm-frameworks/gdpr/principles/GdprProcessingPrinciple/v1",
   "title": "GdprProcessingPrinciple",
   "framework": {
     "name": "gdpr",
@@ -178,7 +178,7 @@ base. Each ITIP base:
 ```json
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/Structure/v1",
+  "$id": "gsmarc://gsm-frameworks/Structure/v1",
   "title": "ItipStructure",
   "framework": {
     "name": "itip",
@@ -187,7 +187,7 @@ base. Each ITIP base:
   "$ref": "gsmarc://gsm/Structure/v1",
   "allOf": [
     {
-      "$ref": "gsmarc://itip/Ascription/v1"
+      "$ref": "gsmarc://gsm-frameworks/Ascription/v1"
     }
   ]
 }
@@ -445,8 +445,8 @@ organization frameworks.
 Each framework owns a `gsmarc://` authority or authority path. Existing paths include:
 
 ```text
-gsmarc://itip/frameworks/http/HttpRequest/v1
-gsmarc://itip/frameworks/gdpr/principles/GdprProcessingPrinciple/v1
+gsmarc://gsm-frameworks/http/HttpRequest/v1
+gsmarc://gsm-frameworks/gdpr/principles/GdprProcessingPrinciple/v1
 ```
 
 The `framework` object is the authoritative package ownership marker; `$id` provides

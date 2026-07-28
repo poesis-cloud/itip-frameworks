@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/nis2/supply-chain/Nis2SupplyChainSecurity/v1",
+  "$id": "gsmarc://gsm-frameworks/nis2/supply-chain/Nis2SupplyChainSecurity/v1",
   "title": "Nis2SupplyChainSecurity",
   "framework": {
     "name": "nis2",

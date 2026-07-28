@@ -1,4 +1,4 @@
-# Copilot Instructions — itip-frameworks
+# Copilot Instructions — gsm-frameworks
 
 This repository is the **published, versioned source of sourced governance/compliance/architecture/regulatory
 framework schemas** for the IT Intelligence Platform (ITIP). It contains no runnable application code — only
@@ -31,7 +31,7 @@ filesystem-relative `$ref` paths that cross from one framework's folder into ano
 articulation is documented in `frameworks/README.md`, not encoded in schema `$ref`.
 
 ### `$id` namespace stability
-Every archetype schema's `$id` uses the `gsmarc://itip/frameworks/{authority}/{taxonomy}/{Title}/v1` scheme.
+Every archetype schema's `$id` uses the `gsmarc://gsm-frameworks/{authority}/{taxonomy}/{Title}/v1` scheme.
 This is a **logical identifier**, independent of which repository or filesystem path physically hosts the
 file — never change an existing `$id` without a deliberate, documented versioning decision (bump the trailing
 `/v1` → `/v2`, do not mutate v1 in place once published).

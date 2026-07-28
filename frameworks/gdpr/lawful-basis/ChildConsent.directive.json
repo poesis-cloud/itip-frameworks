@@ -16,7 +16,7 @@
   "structure": "$gdpr:data-controller",
   "modal": "MUST",
   "verb": "ENSURE",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/lawful-basis/GdprConsent/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/lawful-basis/GdprConsent/v1",
   "purpose": "$gdpr:personal-data-processing",
   "deploymentNotes": "At deployment: 'structure' resolves to the data controller (accountable). 'purpose' resolves to the adopter's personal data processing scope. Mandates parental consent verification when offering information society services directly to a child under 16 (or lower age set by Member State, not below 13). Operationalized by Norm checking parental consent and age verification."
 }

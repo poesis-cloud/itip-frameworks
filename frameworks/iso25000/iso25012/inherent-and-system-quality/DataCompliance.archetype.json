@@ -1,6 +1,6 @@
 {
   "$schema": "gsmarc://gsm/Archetype/v1",
-  "$id": "gsmarc://itip/frameworks/iso25000/iso25012/inherent-and-system-quality/DataCompliance/v1",
+  "$id": "gsmarc://gsm-frameworks/iso25000/iso25012/inherent-and-system-quality/DataCompliance/v1",
   "title": "DataCompliance",
   "framework": {
     "name": "iso25000",

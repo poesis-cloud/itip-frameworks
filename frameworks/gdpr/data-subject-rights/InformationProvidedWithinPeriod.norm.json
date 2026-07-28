@@ -12,8 +12,8 @@
     ],
     "text": "The controller shall provide the information referred to in paragraphs 1 and 2: (a) within a reasonable period after obtaining the personal data, but at the latest within one month, having regard to the specific circumstances in which the personal data are processed."
   },
-  "operationalizes": "gsmarc://itip/frameworks/gdpr/data-subject-rights/InformationIndirectCollection/v1",
-  "qualifier": "gsmarc://itip/frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
+  "operationalizes": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/InformationIndirectCollection/v1",
+  "qualifier": "gsmarc://gsm-frameworks/gdpr/data-subject-rights/GdprTransparencyObligation/v1",
   "applicability": "GdprControllerProcessorRole.role in ['CONTROLLER', 'JOINT_CONTROLLER']",
   "assertion": "informationProvided == true && conciseTransparentIntelligible == true",
   "toleranceMode": "INSTANTANEOUS",

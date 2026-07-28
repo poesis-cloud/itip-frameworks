@@ -1,10 +1,10 @@
-# PROJECT_BRIEF.md — itip-frameworks
+# PROJECT_BRIEF.md — gsm-frameworks
 
 > Last updated: 2026-07-27 | Sprint 0 | Status: Design Phase
 
 ## 1. Project Overview
 
-`itip-frameworks` is the published, versioned repository of **sourced governance/compliance/architecture/regulatory framework schemas** for the IT Intelligence Platform (ITIP). It was extracted from the private `itip` repository's `def/frameworks/` directory (269 files at extraction) so that the sourced vocabulary can be distributed, versioned, and consumed independently of ITIP's private design-time IP.
+`gsm-frameworks` is the published, versioned repository of **sourced governance/compliance/architecture/regulatory framework schemas** for the IT Intelligence Platform (ITIP). It was extracted from the private `itip` repository's `def/frameworks/` directory (269 files at extraction) so that the sourced vocabulary can be distributed, versioned, and consumed independently of ITIP's private design-time IP.
 
 ## 2. Concept / Product Description
 
@@ -56,7 +56,7 @@ This repo is content-only (no dev/QA sprint cycle in the application sense). Mai
 **What does not work yet:**
 
 - No CI/validation pipeline configured.
-- No automated cross-check that `gsmarc://itip/frameworks/...` `$id` values stay unique across the corpus.
+- No automated cross-check that `gsmarc://gsm-frameworks/...` `$id` values stay unique across the corpus.
 
 **What is next:**
 
